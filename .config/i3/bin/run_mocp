@@ -1,0 +1,5 @@
+
+#!/bin/bash 
+#   just give it a try to open terminal program 
+#  2 Deec 2020
+exec mocp -p

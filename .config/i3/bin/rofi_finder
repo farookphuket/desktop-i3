@@ -1,0 +1,5 @@
+
+#!/bin/bash 
+# from https://kifarunix.com/install-and-setup-i3-windows-manager-on-ubuntu-20-04/
+# 6 nov 2020
+xopen "$(locate -i / | rofi -threads 0 -width 80 -font 'Noto Sans 18'  -dmenu -i -p "Find")"
