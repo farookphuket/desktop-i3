@@ -7,7 +7,7 @@
 >   so I just move to manjaro-i3 and will stick with this until I know 
 >   how to use&config dwm (up until now I still cannot use dwm)
 
-> 1 Feb 2021 file is too big get a smaller one
+
 
 
 <br />
@@ -42,35 +42,6 @@
 >   file `/manjaro-i3/config` will got to ~/.i3/
 >   by type (OR COPY AND PASTE) the below command
 >   ` cp   config ~/.i3/config `
-
-
-
-
-
-##  1 Feb 2021 
-
-> Just remove the picture out from this repo so to get the picture please 
-> run `git clone https://gitlab.com/farookphuket/wallpapers.git`
-> I always forgot what is the program to simply write image.iso to usb 
-> now I just got it here 
-
-> to install this program run `sudo pacman -S imagewriter`
-
-
-[suse_iso]:https://i.ibb.co/YB3dj7n/2021-02-01-suse-iso.png
-
-![suse image to usb][suse_iso]
-
-
-
-
-[imagewriter]:https://i.ibb.co/Q69jN2C/2021-02-01-suse-github.png
-
-![opensuse image writer][imagewriter]
-
-
-
-
 
 
 
