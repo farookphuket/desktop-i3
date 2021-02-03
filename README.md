@@ -1,7 +1,7 @@
 # desktop-i3
 
 
-#   I jsut start using manjaro-i3 on 25-jan-2021
+#   I just start using manjaro-i3 on 25-jan-2021
 
 >   dear friends I am just very tired of config my custom i3wm on manjaro xfce 
 >   so I just move to manjaro-i3 and will stick with this until I know 
@@ -42,6 +42,61 @@
 >   file `/manjaro-i3/config` will got to ~/.i3/
 >   by type (OR COPY AND PASTE) the below command
 >   ` cp   config ~/.i3/config `
+
+
+
+
+
+##  Last update on 26 Jan 2021
+
+
+>   my i3wm config on my desktop
+>   dear friends if you are going to copy this repo please make sure that you're know
+>   what the fuck you're doing anotherwise you will end-up messed your system
+>   please respect to the fact that your computer and mine were different!
+>   I don't know what you already put in your system so that's why I cannot tell you if this config will work on yours.
+
+
+>   I've print the list of all the program that I install on my system if you want to have a look
+
+
+
+<br />
+
+
+
+
+##  file name & Date:
+
+
+
+
+
+No.     |    OS   |file name       | date
+--- |  ---|  --- |   --- |
+|   1   |  manjaro xfce   |  manjaro20_program_list.txt     |    3-Dec-2020
+|   2   |  manjaro xfce   |  my_app_install_list_6-dec-2020.txt  |   5-Dec-2020
+|   3   |  manjaro xfce   |  manjaro20-2_program_list_7-dec-2020.txt |   7-Dec-2020
+|   4   |  manjaro xfce   |  my_app_list_6-Jan-2021.txt    |  6-Jan-2021
+|   5   |  manjaro i3   |  /manjari-i3/app_list_26-jan-2021.txt    |  26-Jan-2021
+
+
+
+
+
+<br />
+
+
+##  3 Feb 2021 Manjaro ONLY! 
+>   the file "install_my_app.sh" is the program that I mainly use and install 
+>   every time so if your clean install and you want to install it too 
+>   now make sure that you are in the directory "desktop-i3" that you just 
+>   clone if you do so you can just simply run "sudo ./" in your terminal
+>   so all the program will be install as you expect.
+
+
+
+
 
 
 
@@ -97,44 +152,7 @@
 <br />
 
 
-##  Last update on 26 Jan 2021
 
-
->   my i3wm config on my desktop
->   dear friends if you are going to copy this repo please make sure that you're know
->   what the fuck you're doing anotherwise you will end-up messed your system
->   please respect to the fact that your computer and mine were different!
->   I don't know what you already put in your system so that's why I cannot tell you if this config will work on yours.
-
-
->   I've print the list of all the program that I install on my system if you want to have a look
-
-
-
-<br />
-
-
-
-
-##  file name & Date:
-
-
-
-
-
-No.     |    OS   |file name       | date
---- |  ---|  --- |   --- |
-|   1   |  manjaro xfce   |  manjaro20_program_list.txt     |    3-Dec-2020
-|   2   |  manjaro xfce   |  my_app_install_list_6-dec-2020.txt  |   5-Dec-2020
-|   3   |  manjaro xfce   |  manjaro20-2_program_list_7-dec-2020.txt |   7-Dec-2020
-|   4   |  manjaro xfce   |  my_app_list_6-Jan-2021.txt    |  6-Jan-2021
-|   5   |  manjaro i3   |  /manjari-i3/app_list_26-jan-2021.txt    |  26-Jan-2021
-
-
-
-
-
-<br />
 
 
 ---
@@ -283,7 +301,6 @@ No.     |    OS   |file name       | date
 <br />
 
 
-<br />
 
 
 
@@ -349,16 +366,6 @@ No.     |    OS   |file name       | date
 ```
 
 
-##  Add this line into your .xinitrc
-
->   open terminal run `vim ~/.xinitrc ` then add the code below
-
-
-
-```
-xxkb &
-
-```
 
 
 
