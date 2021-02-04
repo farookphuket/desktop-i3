@@ -16,7 +16,11 @@
 
 #   Where to put the config file ONLY IF YOU USE MANJARO-I3 x
 
-##  !BEFORE YOU COPY AND DO THING DO THIS NOW
+
+
+
+#  !BEFORE YOU COPY AND DO THING DO THIS NOW
+
 
 >   just incase thing happen or you maybe do not like my config 
 >   so that you still have you `.old` config back by just remove .old from the file
@@ -33,6 +37,30 @@
 >   `cd desktop-i3/manjaro-i3 ` 
 >   otherwise you cannot run the below command
 
+>   if you just do clean install make your you have run "sudo pacman -Syu "
+>   after you update the system now you can install all the program at one 
+>   command (make sure you're in the "install"  directory of desktop-i3 that 
+>   you just have copy ) by run "sudo ./install_my_app.sh" so all of the 
+>   program will be install (please make sure you have a look the file 
+>   edit the file as you need)
+
+
+
+
+
+##  program that I must to have 
+
+> when I come to install setup i3wm on manjaro the program that list below 
+> are all that I must install on my system
+
+- rofi base-devel bmenu morc_menu cmake go w3m lxsession lxappearance
+xxkb 
+- networkmanager network-manager-applet pa-applet pulseaudio pavucontrol
+- i3-gaps i3status-manjaro i3lock i3exit blueman polkit-gnome xdotool 
+- xfce4-terminal xfce4-power-manager feh picom conky flameshot arandr clipit
+
+
+
 
 >   the file `/manjaro-i3/config` will go to your ~/.i3
 >   by type (OR COPY AND PASTE) the below command
@@ -42,6 +70,32 @@
 >   file `/manjaro-i3/config` will got to ~/.i3/
 >   by type (OR COPY AND PASTE) the below command
 >   ` cp   config ~/.i3/config `
+
+
+
+
+
+##  Date 4 Feb 2021 
+
+>   I just install the "lxsession" program now all the icon that I want it to be
+>   shown is now show on the right panel of the screen 
+
+
+
+
+
+[my_select_icon]:https://i.ibb.co/1MyTtLd/2021-02-04-icon-theme.png
+
+![my icon theme][my_select_icon]
+
+
+
+
+
+
+
+
+
 
 
 

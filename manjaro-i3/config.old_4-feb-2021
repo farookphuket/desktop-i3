@@ -48,7 +48,7 @@ exec --no-startup-id volumeicon
 exec_always --no-startup-id xxkb
 #bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 exec --no-startup-id pulseaudio
-#exec --no-startup-id pa-applet
+exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec pavucontrol
 
 ################################################################################################
@@ -295,8 +295,6 @@ exec --no-startup-id clipit
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-
-
 # I don't want autolock
 #exec --no-startup-id xautolock -time 10 -locker blurlock
 
@@ -448,7 +446,6 @@ exec_always setxkbmap -model pc105 -layout "us,th" -option 'grp:alt_shift_toggle
 
 #   this is only my desktop config find your output by xrandr --query
 exec --no-startup-id xrandr --output HDMI1 --left-of HDMI2 --auto
-exec --no-startup-id lxsession & 
 
 
 
