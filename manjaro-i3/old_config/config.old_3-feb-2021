@@ -21,7 +21,7 @@ bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font xft:Source Code Variable 14
+font xft:SourceCodeVariable 14
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -59,11 +59,12 @@ bindsym $mod+Ctrl+m exec pavucontrol
 
 # Start Applications
 bindsym $mod+Ctrl+b exec xfce4-terminal -e 'bmenu'
-bindsym $mod+F1 exec brave
+bindsym $mod+F1 exec chromium
 bindsym $mod+F2 exec firefox
-bindsym $mod+F3 exec chromium
-bindsym $mod+F7 exec konsole -name float  -e 'ranger'
-
+bindsym $mod+F3 exec pcmanfm
+# bindsym $mod+F3 exec ranger
+bindsym $mod+Shift+F3 exec konsole  -name float  -e 'ranger'
+#bindsym $mod+F5 exec konsole -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 #bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -297,10 +298,8 @@ exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 # I don't want autolock
 #exec --no-startup-id xautolock -time 10 -locker blurlock
-
-
-#exec_always --no-startup-id ff-theme-util
-#exec_always --no-startup-id fix_xcursor
+exec_always --no-startup-id ff-theme-util
+exec_always --no-startup-id fix_xcursor
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:

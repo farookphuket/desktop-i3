@@ -1,22 +1,55 @@
 # desktop-i3
 
 
-#   I jsut start using manjaro-i3 on 25-jan-2021
+#   I just start using manjaro-i3 on 25-jan-2021
 
 >   dear friends I am just very tired of config my custom i3wm on manjaro xfce 
 >   so I just move to manjaro-i3 and will stick with this until I know 
 >   how to use&config dwm (up until now I still cannot use dwm)
 
-> 1 Feb 2021 file is too big get a smaller one
+
 
 
 <br />
 
 
 
-#   Where to put the config file ONLY IF YOU USE MANJARO-I3 x
 
-##  !BEFORE YOU COPY AND DO THING DO THIS NOW
+
+
+
+
+#   Command to run here 
+
+>   last update 4 Feb 2021
+
+1.  Download the wallpaper `cd ~/Pictures ` hit enter now run 
+` git clone https://gitlab.com/farookphuket/wallpapers.git `
+
+2.  Download this config run `cd ~/` hit enter follow by 
+`git clone https://github.com/farookphuket/desktop-i3.git` 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   Where to put the config file ONLY IF YOU USE MANJARO-I3 
+
+
+
+
+#  !BEFORE YOU COPY AND DO THING DO THIS NOW
+
 
 >   just incase thing happen or you maybe do not like my config 
 >   so that you still have you `.old` config back by just remove .old from the file
@@ -33,6 +66,30 @@
 >   `cd desktop-i3/manjaro-i3 ` 
 >   otherwise you cannot run the below command
 
+>   if you just do clean install make your you have run "sudo pacman -Syu "
+>   after you update the system now you can install all the program at one 
+>   command (make sure you're in the "install"  directory of desktop-i3 that 
+>   you just have copy ) by run "sudo ./install_my_app.sh" so all of the 
+>   program will be install (please make sure you have a look the file 
+>   you can edit the file as you need)
+
+
+
+
+
+##  program that I must to have 
+
+> when I come to install setup i3wm on manjaro the program that list below 
+> are all that I must install on my system
+
+- rofi base-devel bmenu morc_menu cmake go w3m lxsession lxappearance
+xxkb 
+- networkmanager network-manager-applet pa-applet pulseaudio pavucontrol
+- i3-gaps i3status-manjaro i3lock i3exit blueman polkit-gnome xdotool 
+- xfce4-terminal xfce4-power-manager feh picom conky flameshot arandr clipit
+
+
+
 
 >   the file `/manjaro-i3/config` will go to your ~/.i3
 >   by type (OR COPY AND PASTE) the below command
@@ -47,26 +104,78 @@
 
 
 
-##  1 Feb 2021 
+##  Date 4 Feb 2021 
 
-> Just remove the picture out from this repo so to get the picture please 
-> run `git clone https://gitlab.com/farookphuket/wallpapers.git`
-> I always forgot what is the program to simply write image.iso to usb 
-> now I just got it here 
-
-> to install this program run `sudo pacman -S imagewriter`
-
-
-[suse_iso]:https://i.ibb.co/YB3dj7n/2021-02-01-suse-iso.png
-
-![suse image to usb][suse_iso]
+>   I just install the "lxsession" program now all the icon that I want it to be
+>   shown is now show on the right panel of the screen 
 
 
 
 
-[imagewriter]:https://i.ibb.co/Q69jN2C/2021-02-01-suse-github.png
 
-![opensuse image writer][imagewriter]
+[my_select_icon]:https://i.ibb.co/1MyTtLd/2021-02-04-icon-theme.png
+
+![my icon theme][my_select_icon]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##  Last update on 26 Jan 2021
+
+
+>   my i3wm config on my desktop
+>   dear friends if you are going to copy this repo please make sure that you're know
+>   what the fuck you're doing anotherwise you will end-up messed your system
+>   please respect to the fact that your computer and mine were different!
+>   I don't know what you already put in your system so that's why I cannot tell you if this config will work on yours.
+
+
+>   I've print the list of all the program that I install on my system if you want to have a look
+
+
+
+<br />
+
+
+
+
+##  file name & Date:
+
+
+
+
+
+No.     |    OS   |file name       | date
+--- |  ---|  --- |   --- |
+|   1   |  manjaro xfce   |  manjaro20_program_list.txt     |    3-Dec-2020
+|   2   |  manjaro xfce   |  my_app_install_list_6-dec-2020.txt  |   5-Dec-2020
+|   3   |  manjaro xfce   |  manjaro20-2_program_list_7-dec-2020.txt |   7-Dec-2020
+|   4   |  manjaro xfce   |  my_app_list_6-Jan-2021.txt    |  6-Jan-2021
+|   5   |  manjaro i3   |  /manjari-i3/app_list_26-jan-2021.txt    |  26-Jan-2021
+
+
+
+
+
+<br />
+
+
+##  3 Feb 2021 Manjaro ONLY! 
+>   the file "install_my_app.sh" is the program that I mainly use and install 
+>   every time so if your clean install and you want to install it too 
+>   now make sure that you are in the directory "desktop-i3" that you just 
+>   clone if you do so you can just simply run "sudo ./" in your terminal
+>   so all the program will be install as you expect.
 
 
 
@@ -126,44 +235,7 @@
 <br />
 
 
-##  Last update on 26 Jan 2021
 
-
->   my i3wm config on my desktop
->   dear friends if you are going to copy this repo please make sure that you're know
->   what the fuck you're doing anotherwise you will end-up messed your system
->   please respect to the fact that your computer and mine were different!
->   I don't know what you already put in your system so that's why I cannot tell you if this config will work on yours.
-
-
->   I've print the list of all the program that I install on my system if you want to have a look
-
-
-
-<br />
-
-
-
-
-##  file name & Date:
-
-
-
-
-
-No.     |    OS   |file name       | date
---- |  ---|  --- |   --- |
-|   1   |  manjaro xfce   |  manjaro20_program_list.txt     |    3-Dec-2020
-|   2   |  manjaro xfce   |  my_app_install_list_6-dec-2020.txt  |   5-Dec-2020
-|   3   |  manjaro xfce   |  manjaro20-2_program_list_7-dec-2020.txt |   7-Dec-2020
-|   4   |  manjaro xfce   |  my_app_list_6-Jan-2021.txt    |  6-Jan-2021
-|   5   |  manjaro i3   |  /manjari-i3/app_list_26-jan-2021.txt    |  26-Jan-2021
-
-
-
-
-
-<br />
 
 
 ---
@@ -312,7 +384,6 @@ No.     |    OS   |file name       | date
 <br />
 
 
-<br />
 
 
 
@@ -378,16 +449,6 @@ No.     |    OS   |file name       | date
 ```
 
 
-##  Add this line into your .xinitrc
-
->   open terminal run `vim ~/.xinitrc ` then add the code below
-
-
-
-```
-xxkb &
-
-```
 
 
 
@@ -584,18 +645,18 @@ if you want more go ahead  and visit the website.
 -   **Mod+Shift+q** to close (kill the window).
 -   **Mod+f1** to run brave
 -   **Mod+f2** to run firefox
--   **Mod+f3** to run google-chrome
--   **Mod+f4** to run chromium
+-   **Mod+f3** to run chromium
+-   **Mod+f7** to run ranger
 -   **Mod+b** to run feh ,feh will open the picture in the folder `~/Pictures/Wallpapers` so yeah you must have the folder `Wallpapers` or just change the it
 
 -   **Mod+F2** to run firefox
--   **Mod+m** run mocp [[if your moc not play the song you should run ` mocp `
-command in your terminal to see if what will show in your terminal window moc is very easy
-command music player program to use if you want to help simply press `h`
-]]
+-   **Mod+m** run cmus "please note if you want cmus to be auto update 
+music library on start please have a look /.config/cmus/update-cmus-library.sh"
+file and edit it the music to yours.
 
 
--   **Mod+c** to run flameshot in tray or you can press `PrintScreen` to select area to capture
+-   **PrintScreen** to run flameshot now click and drag to select area for the 
+snap shot your screen 
 
 
 
@@ -614,7 +675,9 @@ command music player program to use if you want to help simply press `h`
 <br />
 
 
--   **Mod+w**   to run `rofi-wifi-menu` to select 'wifi network'
+-   **Mod+w**   to run `rofi-wifi-menu` to select 'wifi network'(in the year 
+2021 I have remove this so no longer rofi-wifi-menu) because you can click 
+and select wifi network via the pa-manager-applet
 
 
 
@@ -624,6 +687,20 @@ command music player program to use if you want to help simply press `h`
 
 
 
+
+<br />
+
+
+
+
+
+##  New update on 2021 no more rofi-wifi-menu
+
+
+
+[nm-applet]:https://i.ibb.co/kMyyGVZ/2021-02-04-wifi-select-network.png
+
+![no need to use rofi-wifi][nm-applet]
 
 
 
@@ -652,6 +729,7 @@ command music player program to use if you want to help simply press `h`
 
 
 -   **Mod+Shift+f** to run finder I can't make this working so far :-C Hmmm...
+so let not use it
 
 
 
@@ -662,5 +740,15 @@ command music player program to use if you want to help simply press `h`
 
 ##  Log screen
 
--   **Mod+l**
+-   **Mod+9** will be blur lock need to enter the password(your password) 
+to login
+
+
+
+##  lockout 
+
+-   **Mod+0** follow by e will be logout 
+-   **Mod+0** follow by r will be reboot 
+-   **Mod+0** follow by s will be shutdown 
+-   **Mod+0** follow by l will be blurlock 
 
