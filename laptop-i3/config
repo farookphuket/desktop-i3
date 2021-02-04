@@ -199,6 +199,9 @@ bar {
 # start conky
 exec --no-startup-id start_conky_maia
 
+#   start lxsession
+exec --no-startup-id lxsession
+
 #exec  --no-startup-id volumeicon
 exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec pavucontrol
