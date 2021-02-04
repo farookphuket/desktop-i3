@@ -80,7 +80,7 @@
 ##  program that I must to have 
 
 > when I come to install setup i3wm on manjaro the program that list below 
-> are all that I must install on my system
+> are all that I must install on my system(both Desktop and Laptop)
 
 - rofi base-devel bmenu morc_menu cmake go w3m lxsession lxappearance
 xxkb 
