@@ -14,7 +14,36 @@
 
 
 
-#   Where to put the config file ONLY IF YOU USE MANJARO-I3 x
+
+
+
+
+
+#   Command to run here 
+
+>   last update 4 Feb 2021
+
+1.  Download the wallpaper `cd ~/Pictures ` hit enter now run 
+` git clone https://gitlab.com/farookphuket/wallpapers.git `
+
+2.  Download this config run `cd ~/` hit enter follow by 
+`git clone https://github.com/farookphuket/desktop-i3.git` 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   Where to put the config file ONLY IF YOU USE MANJARO-I3 
 
 
 
@@ -42,7 +71,7 @@
 >   command (make sure you're in the "install"  directory of desktop-i3 that 
 >   you just have copy ) by run "sudo ./install_my_app.sh" so all of the 
 >   program will be install (please make sure you have a look the file 
->   edit the file as you need)
+>   you can edit the file as you need)
 
 
 
@@ -616,18 +645,18 @@ if you want more go ahead  and visit the website.
 -   **Mod+Shift+q** to close (kill the window).
 -   **Mod+f1** to run brave
 -   **Mod+f2** to run firefox
--   **Mod+f3** to run google-chrome
--   **Mod+f4** to run chromium
+-   **Mod+f3** to run chromium
+-   **Mod+f7** to run ranger
 -   **Mod+b** to run feh ,feh will open the picture in the folder `~/Pictures/Wallpapers` so yeah you must have the folder `Wallpapers` or just change the it
 
 -   **Mod+F2** to run firefox
--   **Mod+m** run mocp [[if your moc not play the song you should run ` mocp `
-command in your terminal to see if what will show in your terminal window moc is very easy
-command music player program to use if you want to help simply press `h`
-]]
+-   **Mod+m** run cmus "please note if you want cmus to be auto update 
+music library on start please have a look /.config/cmus/update-cmus-library.sh"
+file and edit it the music to yours.
 
 
--   **Mod+c** to run flameshot in tray or you can press `PrintScreen` to select area to capture
+-   **PrintScreen** to run flameshot now click and drag to select area for the 
+snap shot your screen 
 
 
 
@@ -646,7 +675,9 @@ command music player program to use if you want to help simply press `h`
 <br />
 
 
--   **Mod+w**   to run `rofi-wifi-menu` to select 'wifi network'
+-   **Mod+w**   to run `rofi-wifi-menu` to select 'wifi network'(in the year 
+2021 I have remove this so no longer rofi-wifi-menu) because you can click 
+and select wifi network via the pa-manager-applet
 
 
 
@@ -656,6 +687,20 @@ command music player program to use if you want to help simply press `h`
 
 
 
+
+<br />
+
+
+
+
+
+##  New update on 2021 no more rofi-wifi-menu
+
+
+
+[nm-applet]:https://i.ibb.co/kMyyGVZ/2021-02-04-wifi-select-network.png
+
+![no need to use rofi-wifi][nm-applet]
 
 
 
@@ -684,6 +729,7 @@ command music player program to use if you want to help simply press `h`
 
 
 -   **Mod+Shift+f** to run finder I can't make this working so far :-C Hmmm...
+so let not use it
 
 
 
@@ -694,5 +740,15 @@ command music player program to use if you want to help simply press `h`
 
 ##  Log screen
 
--   **Mod+l**
+-   **Mod+9** will be blur lock need to enter the password(your password) 
+to login
+
+
+
+##  lockout 
+
+-   **Mod+0** follow by e will be logout 
+-   **Mod+0** follow by r will be reboot 
+-   **Mod+0** follow by s will be shutdown 
+-   **Mod+0** follow by l will be blurlock 
 
