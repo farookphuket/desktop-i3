@@ -87,6 +87,7 @@ bindsym $mod+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size
 
 # screen capture
 bindsym Print exec flameshot gui
+bindsym $mod+Print exec flameshot launcher
 
 
 
