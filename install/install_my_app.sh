@@ -18,6 +18,11 @@ pacman -S flameshot arandr apache php php-apache php-sqlite  --noconfirm
 #   date 7 Feb 2021 
 pacman -S aegisub gthumb  --noconfirm
     
+#   date 9 Feb 2021 
+pacman -S vscode atom --noconfirm
+
+#   Date 17 Feb 2021 KTouch
+pacman -S ktouch --noconfirm
 
 
 echo "pacman has done it's operation now will install puddletag from snap"
