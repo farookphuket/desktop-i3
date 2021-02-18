@@ -2,8 +2,10 @@
 
 
 
- 
-pacman -S tmux powerline gvim nvim base-devel krusader composer --noconfirm
+#   Last add line 19-Feb-2021 
+pacman -S gvim neovim python-pynvim vim-clap --noconfirm
+
+pacman -S tmux powerline base-devel krusader composer --noconfirm
 pacman -S brave chromium rofi filezilla obs-studio xxkb morc_menu --noconfirm
 pacman -S bmenu cmake feh picom conky-i3 nautilus youtube-dl go w3m --noconfirm
 pacman -S lxsession i3-gaps i3status-manjaro i3lock i3exit clipit --noconfirm
