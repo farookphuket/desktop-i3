@@ -203,7 +203,7 @@ exec --no-startup-id start_conky_maia
 exec --no-startup-id lxsession
 
 #exec  --no-startup-id volumeicon
-exec --no-startup-id pa-applet
+#exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec pavucontrol
 
 #   kill window
@@ -275,6 +275,10 @@ gaps inner 4
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+
+
+#exec --no-startup-id klipper
+exec --no-startup-id clipit
 
 
 exec --no-startup-id pamac-tray
