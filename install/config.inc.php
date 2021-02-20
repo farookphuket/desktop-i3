@@ -17,6 +17,9 @@ declare(strict_types=1);
  */
 $cfg['blowfish_secret'] = '**dfjdfjdfjdk jsttdhsjd ^%3434 () *7eef *d'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 
+
+$cfg['TempDir'] = '/tmp/phpmyadmin';
+
 /**
  * Servers configuration
  */

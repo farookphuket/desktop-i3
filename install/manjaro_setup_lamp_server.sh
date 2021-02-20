@@ -49,14 +49,35 @@ sleep 5s
 mysql_secure_installation
 
 
+#     create new group call www-data 
+groupadd www-data
+
+
+#  set permission for current user to www-data 
+usermod -a -G www-data $USER 
+
+
+#   create the dir for phpmyadmin in /var/lib 
+mkdir /var/lib/phpmyadmin 
+
+#   change the permission to 777 
+chmod 777 -R /var/lib/phpmyadmin 
+
 echo "now install phpmyadmin "
+
 
 pacman -S phpmyadmin --noconfirm
 sleep 5s
 
+#   copy the config file into /phpmyadmin 
 cp config.inc.php /etc/webapps/phpmyadmin 
 
+#   change the ownership for www-data 
+chown -R $USER:www-data /etc/webapps/phpmyadmin 
+
+chmod 775 -R /etc/webapps/phpmyadmin 
 sleep 5s
+
 
 echo "phpmyadmin still need some config "
 
@@ -67,6 +88,7 @@ chmod 777 -R /srv/http/lav8.lap
 chmod 777 -R /srv/http/article.me
 
 cp index.php /srv/http/lav8.lap/public
+cp index.html /srv/http/article.me
 
 echo "create folder lav8.lap article.me in /srv/http "
 
