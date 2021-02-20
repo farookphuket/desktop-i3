@@ -4,6 +4,23 @@
 #   this will setup lamp server for manjaro 
 #   using php 8
 
+#   if you're NOT editing the code comment the line below
+pacman -S vscode atom tmux powerline  --noconfirm
+pacman -S gvim neovim python-pynvim vim-clap tree --noconfirm
+
+echo "The code editor has been installed!"
+sleep 5s
+#   -------- End of code editor ---- program
+
+pacman -S  apache php php-apache php-sqlite filezilla composer --noconfirm
+pacman -S  sqlitebrowser dbeaver  --noconfirm
+pacman -S  nodejs npm --noconfirm
+
+echo "End of web dev install "
+
+sleep 5s
+
+
 
 
 #   the php apache php-sqlite has been install 
@@ -13,10 +30,13 @@ mv /etc/httpd/conf/httpd.conf /etc/httpd/conf/httpd.conf.old
 
 mv /etc/php/php.ini /etc/php/php.ini.old 
 
-mv /etc/httpd/conf/extra/httpd-vhosts.conf /etc/httpd/conf/extra/httpd-dav.conf.old
+mv /etc/httpd/conf/extra/httpd-vhosts.conf /etc/httpd/conf/extra/httpd-vhosts.conf.old
 
 mv /etc/hosts /etc/hosts.old
 
+echo "files has backup to file_name.old"
+
+sleep 5s
 #   ---- end backup 
 
 #   copy httpd config file
@@ -30,6 +50,12 @@ cp php.ini /etc/php
 cp hosts /etc
 
 cp httpd-vhosts.conf /etc/httpd/conf/extra/ 
+
+echo "setup files has been copied "
+
+sleep 5s
+
+echo "we will install php-intl mysql "
 
 pacman -Sy php-intl --noconfirm 
 
@@ -79,11 +105,15 @@ chmod 775 -R /etc/webapps/phpmyadmin
 sleep 5s
 
 
-echo "phpmyadmin still need some config "
+echo "phpmyadmin installed and config "
 
+#   we going to create new web project for the testing
+#   the 2 lines will create new folder and 1 sub folder in lav8.lap  
 mkdir /srv/http/lav8.lap 
+mkdir /srv/http/lav8.lap/public 
 mkdir /srv/http/article.me 
 
+#   change permission to 777 (read,write,execute)
 chmod 777 -R /srv/http/lav8.lap 
 chmod 777 -R /srv/http/article.me
 
@@ -93,19 +123,22 @@ cp index.html /srv/http/article.me
 echo "create folder lav8.lap article.me in /srv/http "
 
 
-
+#   enable apache service to run on start-up
 systemctl enable httpd
 
 
 
 
 sleep 5s
+
+
 systemctl restart httpd
 
-echo "restart the service"
+echo "--------All process has done -------------"
 
 
 
+exit
 
 
 
