@@ -1,0 +1,11 @@
+# Host addresses
+127.0.0.1  localhost
+127.0.0.1  lav8.lap
+127.0.0.1  article.me
+127.0.0.1  phpmyadmin
+
+
+127.0.1.1  manja202
+::1        localhost ip6-localhost ip6-loopback
+ff02::1    ip6-allnodes
+ff02::2    ip6-allrouters
