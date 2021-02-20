@@ -98,7 +98,10 @@ sleep 5s
 #   it's can install throught snap and I have to use it 
 snap install puddletag-snap 
 
-
+sleep 5s 
+cp .xxkbrc ~/
+mkdir ~/xxkb 
+echo "------------- All done -------"
 echo "run bmenu again to fix if there are some conflic installer"
 
 
