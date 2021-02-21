@@ -19,7 +19,7 @@ pacman -S brave chromium  --noconfirm
 pacman -S  obs-studio  flameshot --noconfirm
 
 #   background setting and image 
-pacman -S  gthumb --noconfirm
+pacman -S  gthumb mc neofetch --noconfirm
 
 #   download video from youtube
 pacman -S   youtube-dl   --noconfirm
