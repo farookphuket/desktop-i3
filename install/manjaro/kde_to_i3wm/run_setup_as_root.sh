@@ -20,6 +20,14 @@ pacman -S lxsession lxappearance --noconfirm
 
 pacman -S i3-gaps i3status-manjaro i3lock i3exit  --noconfirm
 
+sleep 5s 
+
+mv /etc/i3status.conf /etc/i3status.conf.old 
+cp i3status.conf /etc/
+
+mv /usr/share/conky/conky_maia /usr/share/conky/conky_maia.old 
+cp conky_maia /usr/share/conky/ 
+
 
 echo "i3wm app has been installed"
 sleep 5s
