@@ -1,8 +1,7 @@
 #!/bin/bash 
 
 
-#   this will setup manjaro kde to using i3wm 
-
+#   the program we need to install to setup i3wm 
 pacman -S rofi feh nitrogen xxkb morc_menu --noconfirm
 
 pacman -S arandr networkmanager network-manager-applet --noconfirm
@@ -17,8 +16,6 @@ pacman -S lxsession lxappearance --noconfirm
 
 pacman -S i3-gaps i3status-manjaro i3lock i3exit  --noconfirm
 
-pacman -S xfce4-power-manager xfce4-terminal polkit-gnome  --noconfirm
-
 sleep 5s 
 
 mv /etc/i3status.conf /etc/i3status.conf.old 
@@ -28,17 +25,12 @@ mv /usr/share/conky/conky_maia /usr/share/conky/conky_maia.old
 cp conky_maia /usr/share/conky/ 
 
 
+cp i3status /etc/ 
+cp conky_maia /usr/share/conky/ 
 
-
-
-sleep 5s
-echo "----------setup NOT done yet please watch the video --------"
-echo "please logout and login back again and run the script copy_config.sh "
-echo "to complete this installation "
-echo "----------exiting........"
-
-sleep 5s 
-
-exit
-
-
+echo "----------Success --------------"
+echo "----The installation was configured -----"
+echo "  please logout and log back in again and run command"
+echo " run_copy_config.sh or just copy the config file to "
+echo " /home/$USER/.config/i3/ "
+echo "to finish this setup "
