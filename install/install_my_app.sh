@@ -6,24 +6,32 @@
 
 
 #   need this to complie
-pacman -S  cmake base-devel go --noconfirm
+pacman -S  cmake base-devel go nodejs npm --noconfirm
 
 #   file browser 
-pacman -S  krusader nautilus --noconfirm
+pacman -S  krusader nautilus mc  --noconfirm
 
 #   web browser 
 pacman -S brave chromium  --noconfirm
 
 
 #   screen capture 
-pacman -S  obs-studio  flameshot --noconfirm
+pacman -S  obs-studio  flameshot   --noconfirm
 
 #   background setting and image 
-pacman -S  gthumb mc neofetch --noconfirm
+pacman -S  gthumb  gimp --noconfirm
+
+#   system info 
+pacman -S neofetch --noconfirm 
+
+# iso image writer openSUSE
+pacman -S imagewriter --noconfirm
 
 #   download video from youtube
 pacman -S   youtube-dl   --noconfirm
 
+#   clipboard 
+pacman -S xclip --noconfirm
 
 #   Date 17 Feb 2021 KTouch learn touch typing
 pacman -S ktouch --noconfirm
