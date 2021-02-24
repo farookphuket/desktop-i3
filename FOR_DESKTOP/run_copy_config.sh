@@ -7,7 +7,7 @@ mv ~/.config/i3/config ~/.config/i3/config.old
 #   copy the config file 
 cp config ~/.config/i3/ 
 
-cp update-cmus-library ~/.config/cmus 
+cp update-cmus-library.sh ~/.config/cmus 
 
 pacman -Q > ~/Desktop/program_on-$USER-computer_after.txt
 
