@@ -25,7 +25,7 @@ mv /usr/share/conky/conky_maia /usr/share/conky/conky_maia.old
 cp conky_maia /usr/share/conky/ 
 
 
-cp i3status /etc/ 
+cp i3status.conf /etc/ 
 cp conky_maia /usr/share/conky/ 
 
 echo "----------Success --------------"
