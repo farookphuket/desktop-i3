@@ -1,21 +1,21 @@
-#!/bin/bash 
+#!/bin/bash
 
 
-#   copy user program's list into file 
+#   copy user program's list into file
 #   just incase somthing goes wrong
-pacman -Q > ~/Desktop/$USER-computer-before.txt 
+pacman -Q > ~/Desktop/$USER-computer-before.txt
 
 
 #   copy the xxkb config to home directory
 cp .xxkbrc ~/
 
 #   make xxkb directory
-mkdir ~/xxkb 
+mkdir ~/xxkb
 
-#   make directory before clone the wallpaper file 
+#   make directory before clone the wallpaper file
 mkdir ~/Desktop/Wallpapers
 
-#   clone the wallpaper file 
+#   clone the wallpaper file
 git clone https://gitlab.com/farookphuket/wallpapers.git ~/Desktop/Wallpapers
 
 #   change the folder name to match with in the config i3 file
@@ -31,4 +31,4 @@ echo "------------------------------------------"
 
 
 
-./run_setup_as_root.sh
+./run_as_root.sh

@@ -31,4 +31,4 @@ echo "------------------------------------------"
 
 
 
-./run_setup_as_root.sh
+./run_as_root.sh
