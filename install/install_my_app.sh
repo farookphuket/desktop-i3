@@ -42,11 +42,16 @@ pacman -S aegisub kdenlive --noconfirm
 #   play sound | edit sound | show keypress on screen
 pacman -S audacity audacious  screenkey  --noconfirm
 
+#   mlocate on 24 Feb 2021
+pacman -S mlocate --noconfirm 
 
 echo "pacman has done it's operation now will install puddletag from snap"
 
 
 sleep 5s
+
+#   updatedb 
+updatedb
 
 # note that you still have to run sudo pacman -S mysqld 
 # follow the website  
