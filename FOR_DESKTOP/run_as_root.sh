@@ -33,7 +33,8 @@ cp conky_maia /usr/share/conky/
 
 echo "----------Success --------------"
 echo "----The installation was configured -----"
-echo "  please logout and log back in again and run command"
+echo " please open cmus by type cmus from your teminal then"
+echo " logout and log back in again and run command"
 echo " run_copy_config.sh or just copy the config file to "
 echo " /home/$USER/.config/i3/ "
 echo "-------------- to finish this setup --------------"

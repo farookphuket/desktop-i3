@@ -1,13 +1,16 @@
 #!/bin/bash 
 
-
+ 
 #   backup the old file 
 mv ~/.config/i3/config ~/.config/i3/config.old 
 
 #   copy the config file 
 cp config ~/.config/i3/ 
 
-cp update-cmus-library.sh ~/.config/cmus 
+# only if the user has run cmus the first time 
+if [[ -d ~/.config/cmus ]] && [[ -n `ls -A ~/.config/cmus ` ]]; then 
+    cp update-cmus-library.sh ~/.config/cmus 
+fi
 
 pacman -Q > ~/Desktop/program_on-$USER-computer_after.txt
 

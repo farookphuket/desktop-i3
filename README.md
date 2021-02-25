@@ -1,6 +1,7 @@
 # desktop-i3
 
 
+
 #   I just start using manjaro-i3 on 25-jan-2021
 
 >   dear friends I am just very tired of config my custom i3wm on manjaro xfce 
@@ -11,6 +12,26 @@
 
 
 <br />
+
+#   MANJARO KDE 
+
+>   if you're using Manjaro-KDE like I do just do this step after you have 
+>   download this script 
+
+1. (Choose Desktop or Laptop) open the terminal run the following command 
+
+```
+    
+    cd FOR_(Laptop or Desktop)
+    ./setup.sh 
+
+```
+Enter your password (need the root permission to install the package )
+
+2. run "cmus" to open the cmus music player
+
+
+3. logout and log back in by choose i3 session 
 
 
 
