@@ -26,13 +26,8 @@
     ./setup.sh 
 
 ```
-Enter your password (need the root permission to install the package )
-
-2. run "cmus" to open the cmus music player
-
-
-3. logout and log back in by choose i3 session 
-
+2. you have to logout log back in byselect the i3 session then run file 
+"run_copy_config.sh" 
 
 
 

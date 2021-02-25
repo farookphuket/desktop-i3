@@ -31,4 +31,25 @@ echo "------------------------------------------"
 
 
 
-sudo ./run_as_root.sh
+sudo -s ./run_as_root.sh
+
+
+sleep 5s 
+
+konsole -e "cmus"
+
+sleep 10s
+
+cp update-cmus-library.sh ~/.config/cmus 
+
+TODAY=$(date +"%Y-%m-%d_at_%H:%M:%S")
+
+echo "-------------Success ----------------"
+echo "the config file has been copied!"
+echo "----------- please logout to run  ------"
+echo "./run_copy_config.sh "
+echo "to finish the installation $TODAY "
+
+sleep 5s
+
+exit

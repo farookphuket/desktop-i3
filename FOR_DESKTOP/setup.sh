@@ -31,4 +31,18 @@ echo "------------------------------------------"
 
 
 
-sudo ./run_as_root.sh
+sudo -s ./run_as_root.sh
+
+sleep 5s 
+
+konsole -e "cmus"
+sleep 15s
+
+# copy the cmus reload playlist file 
+cp update-cmus-library.sh ~/.config/cmus  
+
+echo "----------------------------------"
+echo "the config file has been copied "
+echo "please logout and log back in to run "
+echo " ./run_copy_config.sh " 
+echo "in order to finish with this operation"
