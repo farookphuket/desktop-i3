@@ -15,6 +15,11 @@ mkdir ~/xxkb
 #   make directory before clone the wallpaper file 
 mkdir ~/Desktop/Wallpapers
 
+
+if [[ -d ~/Pictures/Wallpapers ]] && [[ -n `ls -A ~/Pictures/Wallpapers` ]]; then
+    # found wallpapers skip this step 
+    echo "Wallpapers found"
+fi
 #   clone the wallpaper file 
 git clone https://gitlab.com/farookphuket/wallpapers.git ~/Desktop/Wallpapers
 
@@ -34,11 +39,19 @@ echo "------------------------------------------"
 sudo -s ./run_as_root.sh
 
 
-sleep 5s 
 
-konsole -e "cmus"
 
-sleep 10s
+sleep 5s
+
+
+# make cmus dir in .config 
+mkdir ~/.config/cmus
+xfce4-terminal -e "cmus"
+
+
+sleep 5s
+
+pacman -Q > ~/Desktop/program_on-$USER-computer_after.txt
 
 cp update-cmus-library.sh ~/.config/cmus 
 

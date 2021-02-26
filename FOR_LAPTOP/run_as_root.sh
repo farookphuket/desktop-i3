@@ -1,6 +1,9 @@
 #!/bin/bash 
 
 
+
+cp -r ../font-twlg /usr/share/fonts/TH-FONTS 
+
 #   the program we need to install to setup i3wm 
 pacman -S rofi feh nitrogen xxkb morc_menu --noconfirm
 
@@ -15,6 +18,8 @@ pacman -S bmenu picom conky-i3 w3m --noconfirm
 pacman -S lxsession lxappearance --noconfirm
 
 pacman -S i3-gaps i3status-manjaro i3lock i3exit  --noconfirm
+
+pacman -S xfce4-power-manager xfce4-terminal --noconfirm
 
 sleep 5s 
 

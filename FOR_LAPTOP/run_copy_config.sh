@@ -9,7 +9,6 @@ cp config ~/.config/i3/
 
 cp update-cmus-library.sh ~/.config/cmus 
 
-pacman -Q > ~/Desktop/program_on-$USER-computer_after.txt
 
 sleep 5s
 

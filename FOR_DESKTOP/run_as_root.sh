@@ -19,6 +19,10 @@ pacman -S lxsession lxappearance --noconfirm
 
 pacman -S i3-gaps i3status-manjaro i3lock i3exit  --noconfirm
 
+pacman -S xfce4-power-manager xfce4-terminal --noconfirm
+
+
+
 sleep 5s 
 
 mv /etc/i3status.conf /etc/i3status.conf.old 
