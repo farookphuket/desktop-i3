@@ -27,7 +27,7 @@ font xft:Source Code Variable 14
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec xfce4-terminal 
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -303,7 +303,7 @@ bindsym $mod+9 exec --no-startup-id blurlock
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
-exec --no-startup-id clipit
+#exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id start_conky_maia
