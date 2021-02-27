@@ -42,7 +42,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal 
+bindsym $mod+Return exec konsole
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -262,8 +262,13 @@ bindsym $mod+m exec ~/.config/cmus/update-cmus-library.sh
 
 
 
-# start feh on reboot
+# the wall paper will be random on boot 
+# comment this line if you don't want 
+# random picture on boot 
 exec --no-startup-id feh --randomize --bg-scale ~/Pictures/Wallpapers/*
+
+# if you don't want random uncomment below line 
+#exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/014_23-2-2021.jpg
 
 # call feh with the window size of 1280x720
 bindsym $mod+b exec feh -g 1280x720 ~/Pictures/Wallpapers
@@ -278,11 +283,12 @@ exec --no-startup-id nm-applet
 
 
 #exec --no-startup-id klipper
-#exec --no-startup-id clipit
+exec --no-startup-id clipit
 
 
 exec --no-startup-id pamac-tray
 
+# if the polkit not auto start un-comment this line
 #exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf

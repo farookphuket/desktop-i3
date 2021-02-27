@@ -15,6 +15,10 @@ pacman -S  krusader nautilus mc  --noconfirm
 pacman -S brave chromium  --noconfirm
 
 
+
+# terminal 
+pacman -S gnome-terminal konsole xfce4-terminal --noconfirm 
+
 #   screen capture 
 pacman -S  obs-studio  flameshot   --noconfirm
 

@@ -12,7 +12,7 @@ echo "The code editor has been installed!"
 sleep 5s
 #   -------- End of code editor ---- program
 
-pacman -S  apache php php-apache php-sqlite filezilla composer --noconfirm
+# pacman -S  apache php php-apache php-sqlite filezilla composer --noconfirm
 pacman -S  sqlitebrowser dbeaver  --noconfirm
 pacman -S  nodejs npm --noconfirm
 

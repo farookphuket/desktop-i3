@@ -300,6 +300,11 @@ bindsym $mod+9 exec --no-startup-id blurlock
 #exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 #exec --no-startup-id manjaro-hello
+
+# if you use xfce you have to un-comment the below line to make picom work
+#exec_always --no-startup-id picom --experimental-backends
+# un-comment the above line to make the transparent effect
+
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
