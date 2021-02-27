@@ -26,6 +26,9 @@ sleep 5s
 mv /etc/i3status.conf /etc/i3status.conf.old 
 cp i3status.conf /etc/
 
+mv /etc/locale.gen /etc/locale.gen.old 
+cp ../locale.gen /etc 
+
 mv /usr/share/conky/conky_maia /usr/share/conky/conky_maia.old 
 cp conky_maia /usr/share/conky/ 
 

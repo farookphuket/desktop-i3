@@ -31,6 +31,8 @@ cp i3status.conf /etc/
 mv /usr/share/conky/conky_maia /usr/share/conky/conky_maia.old 
 cp conky_maia /usr/share/conky/ 
 
+mv /etc/locale.gen /etc/locale.gen.old 
+cp ../locale.gen /etc 
 
 cp i3status.conf /etc/ 
 cp conky_maia /usr/share/conky/ 

@@ -13,6 +13,16 @@
 
 <br />
 
+
+# Warning !
+> this config has test on Manjaro-kde,Manjaro-xfce only so if you use 
+> Manjaro-gnome this may not work for you
+
+
+
+
+
+
 #   MANJARO KDE 
 
 >   if you're using Manjaro-KDE like I do just do this step after you have 
@@ -26,7 +36,7 @@
     ./setup.sh 
 
 ```
-2. you have to logout log back in byselect the i3 session then run file 
+2. you have to logout then log back in by select the i3 session then run file 
 "run_copy_config.sh" 
 
 
@@ -35,31 +45,24 @@
 
 
 
-#   Command to run here 
 
->   last update 4 Feb 2021
+#   Manjaro GNOME `gnome-Terminal` not start after upgrade
 
-1.  Download the wallpaper `cd ~/Pictures ` hit enter now run 
-` git clone https://gitlab.com/farookphuket/wallpapers.git `
+> Date 28-Feb-2021 05:05 a.m. 
+> copy from 
+> https://forum.manjaro.org/t/gnome-terminal-wont-open-after-update/52808/2
+> I've got some problem with this config on manjaro-gnome editions I don't 
+> know if any one had this issue this is how I got fixed
 
-2.  Download this config run `cd ~/` hit enter follow by 
-`git clone https://github.com/farookphuket/desktop-i3.git` 
+``` 
+ sudo vi /etc/locale.gen 
+ "then remove # from en_US.UTF-8 UTF-8"
+ "save file and exit "
+ sudo locale-gen 
+ 
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#   Where to put the config file ONLY IF YOU USE MANJARO-I3 
+> now the gnome-terminal will start-up again 
 
 
 
