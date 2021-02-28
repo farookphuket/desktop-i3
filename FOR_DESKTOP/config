@@ -74,7 +74,7 @@ bindsym $mod+Ctrl+b exec xfce4-terminal -e 'bmenu'
 bindsym $mod+F1 exec brave
 bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec chromium
-bindsym $mod+F7 exec konsole -name float  -e 'ranger'
+bindsym $mod+F7 exec xfce4-terminal -name float  -e 'ranger'
 
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b

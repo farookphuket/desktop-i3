@@ -42,7 +42,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec xfce4-terminal 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -256,7 +256,7 @@ bindsym $mod+F3 exec chromium
 
 
 # Ranger file manager
-bindsym $mod+F7 exec konsole -e 'ranger'
+bindsym $mod+F7 exec xfce4-terminal -e 'ranger'
 # Music
 bindsym $mod+m exec ~/.config/cmus/update-cmus-library.sh
 
@@ -283,7 +283,7 @@ exec --no-startup-id nm-applet
 
 
 #exec --no-startup-id klipper
-exec --no-startup-id clipit
+#exec --no-startup-id clipit
 
 
 exec --no-startup-id pamac-tray

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-konsole -e cmus &
+xfce4-terminal -e cmus &
 
 sleep 10s
 
