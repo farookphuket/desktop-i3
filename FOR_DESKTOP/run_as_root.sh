@@ -17,9 +17,13 @@ pacman -S bmenu picom conky-i3 w3m --noconfirm
 
 pacman -S lxsession lxappearance --noconfirm
 
+
 pacman -S i3-gaps i3status-manjaro i3lock i3exit  --noconfirm
 
 pacman -S xfce4-power-manager xfce4-terminal --noconfirm
+
+# config zsh 1 Mar 2021
+pacman -S zsh zsh-autosuggestions zsh-completions manjaro-zsh-config zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k --noconfirm 
 
 
 
