@@ -67,6 +67,11 @@
 
 
 
+# MANJARO Xfce 
+
+> if you use MANJARO-XFCE please run `./xfce_get_config.sh`
+
+
 #  !BEFORE YOU COPY AND DO THING DO THIS NOW
 
 
