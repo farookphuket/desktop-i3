@@ -4,10 +4,23 @@
 # copy config for xfce
 
 
-cp -r zsh/powerlevel10k ~/
+#cp -r zsh/powerlevel10k ~/
+#
+#cp zsh/.p10k.zsh ~/
+#cp zsh/.zshrc ~/
 
-cp zsh/.p10k.zsh ~/
-cp zsh/.zshrc ~/
+
+if [[ -d /usr/share/zsh ]]; then
+    mv /usr/share/zsh /usr/share/zsh.old 
+fi
+
+if [[ -d /usr/share/zsh-theme-powerlevel10k ]]; then
+    mv /usr/share/zsh-theme-powerlevel10k /usr/share/zsh-theme-powerlevel10k.old 
+fi
+
+
+cp -r MANJARO/zsh /usr/share 
+cp -r MANJARO/zsh-theme-powerlevel10k /usr/share 
 
 chsh -s /usr/bin/zsh 
 
