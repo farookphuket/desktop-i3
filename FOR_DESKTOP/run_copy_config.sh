@@ -2,8 +2,9 @@
 
  
 #   backup the old file 
-mv ~/.config/i3/config ~/.config/i3/config.old 
-
+if [[ -f ~/.config/i3/config ]]; then
+    mv ~/.config/i3/config ~/.config/i3/config.old 
+fi
 #   copy the config file 
 cp config ~/.config/i3/ 
 

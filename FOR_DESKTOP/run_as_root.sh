@@ -34,17 +34,24 @@ pacman -S polkit-gnome libgnomekbd gnome-themes-extra gnome-online-accounts gnom
 
 sleep 5s 
 
-mv /etc/i3status.conf /etc/i3status.conf.old 
+# update file list and index
+updatedb
+
+if [[ -f /etc/i3status.conf ]]; then
+    mv /etc/i3status.conf /etc/i3status.conf.old 
+fi
 cp i3status.conf /etc/
 
-mv /usr/share/conky/conky_maia /usr/share/conky/conky_maia.old 
+if [[ -f /usr/share/conky/conky_maia ]]; then
+    mv /usr/share/conky/conky_maia /usr/share/conky/conky_maia.old 
+fi
 cp conky_maia /usr/share/conky/ 
 
-mv /etc/locale.gen /etc/locale.gen.old 
+if [[ -f /etc/locale.gen ]]; then
+    mv /etc/locale.gen /etc/locale.gen.old 
+fi
 cp ../locale.gen /etc 
 
-cp i3status.conf /etc/ 
-cp conky_maia /usr/share/conky/ 
 
 echo "----------Success --------------"
 echo "----The installation was configured -----"
@@ -54,6 +61,4 @@ echo " run_copy_config.sh or just copy the config file to "
 echo " /home/$USER/.config/i3/ "
 echo "-------------- to finish this setup --------------"
 
-sleep 5s
 
-exit

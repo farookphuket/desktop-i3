@@ -20,7 +20,11 @@ mkdir ~/Desktop/Wallpapers
 
 if [[ -d ~/Pictures/Wallpapers ]] && [[ -n `ls -A ~/Pictures/Wallpapers` ]]; then
     # found the wallpapers 
-    echo "Wallpapers dir exited"
+    echo "Wallpapers dir exited "
+    pushd ~/Pictures/Wallpapers
+    git clone https://gitlab.com/farookphuket/wallpapers.git .
+    sleep 5s
+    popd 
 fi
 #   clone the wallpaper file
 git clone https://gitlab.com/farookphuket/wallpapers.git ~/Desktop/Wallpapers
@@ -40,18 +44,17 @@ echo "------------------------------------------"
 
 sudo -s ./run_as_root.sh
 
-# make cmus dir in ~/.config 
-mkdir ~/.config/cmus 
-
-# run cmus 
 xfce4-terminal -e "cmus"
 
-sleep 10s
+if [[ -d ~/.config/cmus ]]; then
+    # copy the cmus reload playlist file 
+    cp update-cmus-library.sh ~/.config/cmus  
+fi
 
-# copy the cmus reload playlist file 
-cp update-cmus-library.sh ~/.config/cmus  
+mkdir ~/.config/i3
+cp config ~/.config/i3
 
-
+pacman -Q > ~/Desktop/$USER-computer_after.txt
 
 echo "----------------------------------"
 echo "the config file has been copied "

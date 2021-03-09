@@ -40,7 +40,7 @@ pacman -S xclip --noconfirm
 #   Date 17 Feb 2021 KTouch learn touch typing
 pacman -S ktouch --noconfirm
 
-#   video editing tool
+#  subtitle editor , video editing tool
 pacman -S aegisub kdenlive --noconfirm
 
 #   play sound | edit sound | show keypress on screen
@@ -49,7 +49,11 @@ pacman -S audacity audacious  screenkey  --noconfirm
 #   mlocate on 24 Feb 2021
 pacman -S mlocate --noconfirm 
 
-echo "pacman has done it's operation now will install puddletag from snap"
+
+echo "----------------- Pacman Install Has Done-----------------------"
+echo "pacman has done it's operation "
+echo "now will install puddletag from snap"
+echo "----------------------------------------------------------------"
 
 
 sleep 5s
