@@ -5,7 +5,7 @@
 #   just incase somthing goes wrong
 pacman -Q > ~/Desktop/$USER-computer-before.txt
 
-
+../remove_auto_start.sh 
 #   copy the xxkb config to home directory
 cp .xxkbrc ~/
 
@@ -32,15 +32,6 @@ git clone https://gitlab.com/farookphuket/wallpapers.git ~/Desktop/Wallpapers
 #   change the folder name to match with in the config i3 file
 mv ~/Desktop/Wallpapers ~/Pictures/
 
-echo "----Success! your wallpapers has been copied to $HOME/Pictures/Wallpapers"
-
-echo "------------------------------------------"
-echo "---------Start setup of i3-wm ------------"
-echo "setup i3wm for manjaro-kde"
-echo "this may ask for the password of $USER"
-echo "------------------------------------------"
-
-
 
 sudo -s ./run_as_root.sh
 
@@ -51,13 +42,17 @@ if [[ -d ~/.config/cmus ]]; then
     cp update-cmus-library.sh ~/.config/cmus  
 fi
 
+
+
 mkdir ~/.config/i3
 cp config ~/.config/i3
 
 pacman -Q > ~/Desktop/$USER-computer_after.txt
 
-echo "----------------------------------"
+echo "-----------------------------------------------------"
 echo "the config file has been copied "
-echo "please logout and log back in to run "
-echo " ./run_copy_config.sh " 
+echo "please logout and log back in to i3 session "
 echo "in order to finish with this operation"
+echo "----------- Program terminated -----------------------"
+sleep 5s
+exit

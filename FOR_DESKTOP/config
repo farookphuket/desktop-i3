@@ -27,7 +27,7 @@ font xft:Source Code Variable 14
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec gnome-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -74,7 +74,7 @@ bindsym $mod+Ctrl+b exec xfce4-terminal -e 'bmenu'
 bindsym $mod+F1 exec brave
 bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec chromium
-bindsym $mod+F7 exec konsole -name float  -e 'ranger'
+bindsym $mod+F7 exec gnome-terminal -name float  -e 'ranger'
 
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
@@ -303,7 +303,9 @@ bindsym $mod+9 exec --no-startup-id blurlock
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
-exec --no-startup-id clipit
+
+
+#exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 
