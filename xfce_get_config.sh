@@ -9,13 +9,23 @@
 #cp zsh/.p10k.zsh ~/
 #cp zsh/.zshrc ~/
 
+TODAY=$(date +"%Y-%m-%d_at_%H:%M:%S")
+
+
+
+if [[ -f ~/.zshrc ]]; then 
+    mv ~/.zshrc ~/.zshrc.old_$TODAY
+fi
+cp MANJARO_XFCE/.zshrc ~/ 
+
+
 
 if [[ -d /usr/share/zsh ]]; then
-  sudo -s  mv /usr/share/zsh /usr/share/zsh.old 
+  sudo -s  mv /usr/share/zsh /usr/share/zsh.old_$TODAY
 fi
 
 if [[ -d /usr/share/zsh-theme-powerlevel10k ]]; then
-  sudo -s  mv /usr/share/zsh-theme-powerlevel10k /usr/share/zsh-theme-powerlevel10k.old 
+  sudo -s  mv /usr/share/zsh-theme-powerlevel10k /usr/share/zsh-theme-powerlevel10k.old_$TODAY
 
 fi
 
