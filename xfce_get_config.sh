@@ -11,16 +11,17 @@
 
 
 if [[ -d /usr/share/zsh ]]; then
-    mv /usr/share/zsh /usr/share/zsh.old 
+  sudo -s  mv /usr/share/zsh /usr/share/zsh.old 
 fi
 
 if [[ -d /usr/share/zsh-theme-powerlevel10k ]]; then
-    mv /usr/share/zsh-theme-powerlevel10k /usr/share/zsh-theme-powerlevel10k.old 
+  sudo -s  mv /usr/share/zsh-theme-powerlevel10k /usr/share/zsh-theme-powerlevel10k.old 
+
 fi
 
 
-cp -r MANJARO/zsh /usr/share 
-cp -r MANJARO/zsh-theme-powerlevel10k /usr/share 
+sudo -s cp -r MANJARO_XFCE/zsh /usr/share 
+sudo -s cp -r MANJARO_XFCE/zsh-theme-powerlevel10k /usr/share 
 
 chsh -s /usr/bin/zsh 
 
