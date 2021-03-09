@@ -6,6 +6,8 @@
 pacman -Q > ~/Desktop/$USER-computer-before.txt 
 
 
+TODAY=$(date +"%Y-%m-%d_at_%H:%M:%S")
+
 #   copy the xxkb config to home directory
 cp .xxkbrc ~/
 
@@ -18,6 +20,7 @@ mkdir ~/Desktop/Wallpapers
 
 if [[ -d ~/Pictures/Wallpapers ]] && [[ -n `ls -A ~/Pictures/Wallpapers` ]]; then
     # found wallpapers skip this step 
+    mv ~/Pictures/Wallpapers ~/Pictures/Wallpapers.old_$TODAY
     echo "Wallpapers found"
 fi
 #   clone the wallpaper file 
@@ -55,7 +58,6 @@ pacman -Q > ~/Desktop/program_on-$USER-computer_after.txt
 
 cp update-cmus-library.sh ~/.config/cmus 
 
-TODAY=$(date +"%Y-%m-%d_at_%H:%M:%S")
 
 echo "-------------Success ----------------"
 echo "the config file has been copied!"

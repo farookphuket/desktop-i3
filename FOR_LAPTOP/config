@@ -42,7 +42,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal 
+#bindsym $mod+Return exec konsole
+bindsym $mod+Return exec gnome-terminal 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -283,12 +284,11 @@ exec --no-startup-id nm-applet
 
 
 #exec --no-startup-id klipper
-#exec --no-startup-id clipit
+exec --no-startup-id clipit
 
 
 exec --no-startup-id pamac-tray
 
-# if the polkit not auto start un-comment this line
 #exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
