@@ -19,7 +19,7 @@ pacman -S lxsession lxappearance --noconfirm
 
 pacman -S i3-gaps i3status-manjaro i3lock i3exit  --noconfirm
 
-pacman -S xfce4-power-manager xfce4-terminal konsole --noconfirm
+pacman -S xfce4-power-manager xfce4-terminal konsole gnome-terminal --noconfirm
 
 
 

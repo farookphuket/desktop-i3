@@ -20,7 +20,7 @@ pacman -S lxsession lxappearance --noconfirm
 
 pacman -S i3-gaps i3status-manjaro i3lock i3exit  --noconfirm
 
-pacman -S xfce4-power-manager xfce4-terminal konsole --noconfirm
+pacman -S xfce4-power-manager xfce4-terminal konsole gnome-terminal  --noconfirm
 
 # config zsh 1 Mar 2021
 pacman -S zsh zsh-autosuggestions zsh-completions manjaro-zsh-config zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k --noconfirm 
