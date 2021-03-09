@@ -5,6 +5,7 @@
 #   just incase somthing goes wrong
 pacman -Q > ~/Desktop/$USER-computer-before.txt 
 
+../remove_auto_start.sh 
 
 TODAY=$(date +"%Y-%m-%d_at_%H:%M:%S")
 

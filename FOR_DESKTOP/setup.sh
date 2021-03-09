@@ -5,7 +5,7 @@
 #   just incase somthing goes wrong
 pacman -Q > ~/Desktop/$USER-computer-before.txt
 
-
+../remove_auto_start.sh 
 #   copy the xxkb config to home directory
 cp .xxkbrc ~/
 
