@@ -32,18 +32,17 @@ pacman -S polkit-gnome libgnomekbd gnome-themes-extra gnome-online-accounts gnom
 
 
 sleep 5s 
-
-mv /etc/i3status.conf /etc/i3status.conf.old 
+if [[ -f /etc/i3status.conf ]]; then
+	mv /etc/i3status.conf /etc/i3status.conf.old 
+fi
 cp i3status.conf /etc/
 
 mv /etc/locale.gen /etc/locale.gen.old 
 cp ../locale.gen /etc 
 
-mv /usr/share/conky/conky_maia /usr/share/conky/conky_maia.old 
-cp conky_maia /usr/share/conky/ 
-
-
-cp i3status.conf /etc/ 
+if [[ -f /usr/share/conky/conky_mia ]]; then
+	mv /usr/share/conky/conky_maia /usr/share/conky/conky_maia.old 
+fi
 cp conky_maia /usr/share/conky/ 
 
 echo "----------Success --------------"
