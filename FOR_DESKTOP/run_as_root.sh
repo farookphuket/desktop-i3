@@ -56,8 +56,6 @@ fi
 cp -r ../zsh/zsh /usr/share 
 cp -r ../zsh/zsh-theme-powerlevel10k /usr/share
 
-# change the shell to zsh
-chsh -s /bin/zsh 
 
 # END OF zsh
 
@@ -77,14 +75,5 @@ if [[ -f /etc/locale.gen ]]; then
     mv /etc/locale.gen /etc/locale.gen.old 
 fi
 cp ../locale.gen /etc 
-
-
-echo "----------Success --------------"
-echo "----The installation was configured -----"
-echo " please open cmus by type cmus from your teminal then"
-echo " logout and log back in again and run command"
-echo " run_copy_config.sh or just copy the config file to "
-echo " /home/$USER/.config/i3/ "
-echo "-------------- to finish this setup --------------"
 
 

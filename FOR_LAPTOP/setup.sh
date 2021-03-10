@@ -78,7 +78,8 @@ if [[ -d ~/.config/autostart ]] && [[ -n `ls -A ~/.config/autostart` ]]; then
 fi
 
 
-
+# change SHELL 
+chsh -s /bin/zsh
 
 echo "--------------- Success   ---------------------------"
 echo "the config file has been copied!"

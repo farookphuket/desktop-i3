@@ -59,4 +59,3 @@ cp -r ../zsh/zsh /usr/share
 cp -r ../zsh/zsh-theme-powerlevel10k /usr/share
 
 
-chsh -s /bin/zsh

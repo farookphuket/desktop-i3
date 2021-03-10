@@ -79,6 +79,11 @@ fi
 # sent output of the program list after install
 pacman -Q > ~/Desktop/$USER-computer_after.txt
 
+
+# change SHELL 
+chsh -s /bin/zsh
+
+
 echo "-----------------------------------------------------"
 echo "the config file has been copied "
 echo "please logout and log back in to i3 session "
