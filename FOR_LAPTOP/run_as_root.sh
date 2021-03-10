@@ -37,7 +37,11 @@ if [[ -f /etc/i3status.conf ]]; then
 fi
 cp i3status.conf /etc/
 
-mv /etc/locale.gen /etc/locale.gen.old 
+
+# this is important if you use gnome
+if [[ -f /etc/locale.gen ]]; then
+    mv /etc/locale.gen /etc/locale.gen.old 
+fi
 cp ../locale.gen /etc 
 
 if [[ -f /usr/share/conky/conky_mia ]]; then

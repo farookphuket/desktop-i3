@@ -21,23 +21,15 @@
 
 
 
+#   MANJARO KDE,GNOME,XFCE 
+
+> after you have clone this repo it will be a folder call "desktop-i3"
+> cd into the folder then you will see the "FOR_DESKTOP" and "FOR_LAPTOP" 
+> cd into one of them now run `./setup.sh` wait until the configuration 
+> complete then logout and log back in 
+> now you're all set enjoy!
 
 
-#   MANJARO KDE 
-
->   if you're using Manjaro-KDE like I do just do this step after you have 
->   download this script 
-
-1. (Choose Desktop or Laptop) open the terminal run the following command 
-
-```
-    
-    cd FOR_(Laptop or Desktop)
-    ./setup.sh 
-
-```
-2. you have to logout then log back in by select the i3 session then run file 
-"run_copy_config.sh" 
 
 
 
@@ -67,9 +59,6 @@
 
 
 
-# MANJARO Xfce 
-
-> if you use MANJARO-XFCE please run `./xfce_get_config.sh`
 
 
 #  !BEFORE YOU COPY AND DO THING DO THIS NOW
