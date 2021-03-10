@@ -45,11 +45,11 @@ BACKUP_PATH=~/Documents/zsh_backup_conf
 
 #   backup if there is exited zsh config
 if [[ -d /usr/share/zsh ]] && [[ -n `ls -A /usr/share/zsh` ]]; then
-    mv /usr/share/zsh $BACKUP_PATH/zsh.old_$TODAY
+    mv /usr/share/zsh $BACKUP_PATH
 fi 
 
 if [[ -d /usr/share/zsh-theme-powerlevel10k ]] && [[ -n `ls -A /usr/share/zsh-theme-powerlevel10k` ]]; then
-    mv /usr/share/zsh-theme-powerlevel10k $BACKUP_PATH/zsh-theme.old_$TODAY
+    mv /usr/share/zsh-theme-powerlevel10k $BACKUP_PATH
 fi
 
 # copy the new zsh config
