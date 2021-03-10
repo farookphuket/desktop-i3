@@ -43,9 +43,13 @@ if [[ -d ~/.config/cmus ]]; then
 fi
 
 
-
-mkdir ~/.config/i3
-cp config ~/.config/i3
+if [[ -d ~/.config/i3 ]] && [[ -f ~/.config/i3/config ]]; then
+    mv ~/.config/i3/config ~/.config/i3/config.old
+    cp config ~/.config/i3
+else
+    mkdir ~/.config/i3
+    cp config ~/.config/i3
+fi
 
 pacman -Q > ~/Desktop/$USER-computer_after.txt
 
