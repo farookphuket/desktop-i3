@@ -37,6 +37,32 @@ sleep 5s
 # update file list and index
 updatedb
 
+TODAY=$(date +"%Y-%m-%d_at_%H:%m")
+
+mkdir ~/Documents/zsh_backup_conf
+BACKUP_PATH=~/Documents/zsh_backup_conf
+# copy the zsh cofig 
+
+#   backup if there is exited zsh config
+if [[ -d /usr/share/zsh ]] && [[ -n `ls -A /usr/share/zsh` ]]; then
+    mv /usr/share/zsh $BACKUP_PATH/zsh.old_$TODAY
+fi 
+
+if [[ -d /usr/share/zsh-theme-powerlevel10k ]] && [[ -n `ls -A /usr/share/zsh-theme-powerlevel10k` ]]; then
+    mv /usr/share/zsh-theme-powerlevel10k $BACKUP_PATH/zsh-theme.old_$TODAY
+fi
+
+# copy the new zsh config
+cp -r ../zsh/zsh /usr/share 
+cp -r ../zsh/zsh-theme-powerlevel10k /usr/share
+
+# change the shell to zsh
+chsh -s /bin/zsh 
+
+# END OF zsh
+
+
+
 if [[ -f /etc/i3status.conf ]]; then
     mv /etc/i3status.conf /etc/i3status.conf.old 
 fi

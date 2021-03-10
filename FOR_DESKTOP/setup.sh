@@ -3,9 +3,17 @@
 
 #   copy user program's list into file
 #   just incase somthing goes wrong
+
+
+# today time
+TODAY=$(date +"%Y-%m-%d_at_%H:%m")
+
+# create backup directory 
+mkdir ~/Documents/backup_conf 
+BACKUP_PATH=~/Documents/backup_conf
+
 pacman -Q > ~/Desktop/$USER-computer-before.txt
 
-../remove_auto_start.sh 
 #   copy the xxkb config to home directory
 cp .xxkbrc ~/
 
@@ -51,6 +59,24 @@ else
     cp config ~/.config/i3
 fi
 
+# copy the zshrc config
+if [[ -f ~/.zshrc ]]; then
+    # backup the file if exited
+    mv ~/.zshrc $BACKUP_PATH/.zshrc.old_$TODAY
+fi
+cp ../zsh/.zshrc ~/
+    
+
+
+# remove autostart program to prevent the un-need program to start at boot 
+if [[ -d ~/.config/autostart ]] && [[ -n `ls -A ~/.config/autostart` ]]; then
+    cp -r ~/.config/autostart $BACKUP_PATH/autostart.old_$TODAY
+    rm -rf ~/.config/autostart/*
+fi
+
+
+
+# sent output of the program list after install
 pacman -Q > ~/Desktop/$USER-computer_after.txt
 
 echo "-----------------------------------------------------"

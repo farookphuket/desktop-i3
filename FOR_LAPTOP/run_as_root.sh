@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-
+TODAY=$(date +"%Y-%m-%d_at_%H:%m")
 
 cp -r ../font-twlg /usr/share/fonts/TH-FONTS 
 
@@ -45,9 +45,18 @@ if [[ -f /usr/share/conky/conky_mia ]]; then
 fi
 cp conky_maia /usr/share/conky/ 
 
-echo "----------Success --------------"
-echo "----The installation was configured -----"
-echo "  please logout and log back in again and run command"
-echo " run_copy_config.sh or just copy the config file to "
-echo " /home/$USER/.config/i3/ "
-echo "to finish this setup "
+
+
+
+# backup then copy zsh config 
+if [[ -d /usr/share/zsh ]] && [[ -n `ls -A /usr/share/zsh` ]]; then
+    mv /usr/share/zsh /usr/share/zsh.old_$TODAY
+fi
+if [[ -d /usr/share/zsh-theme-powerlevel10k ]] && [[ -n `ls -A /usr/share/zsh-theme-powerlevel10k` ]]; then
+    mv /usr/share/zsh-theme-powerlevel10k /usr/share/zsh-theme.old_$TODAY
+fi
+cp -r ../zsh/zsh /usr/share
+cp -r ../zsh/zsh-theme-powerlevel10k /usr/share
+
+
+chsh -s /bin/zsh
