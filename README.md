@@ -34,7 +34,21 @@
 
 
 
+# Only If you use "MANJARO [XFCE ,GNOME,KDE]"
 
+
+
+## MANJARO KDE
+
+[![](http://img.youtube.com/vi/1qgfkFF-Pkk/0.jpg)](http://www.youtube.com/watch?v=1qgfkFF-Pkk "")
+
+
+
+
+
+## MANJARO GNOME
+
+[![](http://img.youtube.com/vi/q3Sanjl93dQ/0.jpg)](http://www.youtube.com/watch?v=q3Sanjl93dQ "")
 
 
 
