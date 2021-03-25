@@ -254,6 +254,7 @@ bindsym Print exec flameshot gui
 bindsym $mod+F1 exec brave
 bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec chromium
+bindsym $mod+F4 exec google-chrome-stable
 
 
 # Ranger file manager
@@ -284,7 +285,7 @@ exec --no-startup-id nm-applet
 
 
 #exec --no-startup-id klipper
-#exec --no-startup-id clipit
+exec --no-startup-id clipit
 
 
 exec --no-startup-id pamac-tray

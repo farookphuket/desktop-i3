@@ -687,6 +687,7 @@ if you want more go ahead  and visit the website.
 -   **Mod+f1** to run brave
 -   **Mod+f2** to run firefox
 -   **Mod+f3** to run chromium
+-   **Mod+f4** to run google chrome "I have install google chrome from AUR"
 -   **Mod+f7** to run ranger
 -   **Mod+b** to run feh ,feh will open the picture in the folder `~/Pictures/Wallpapers` so yeah you must have the folder `Wallpapers` or just change the it
 
