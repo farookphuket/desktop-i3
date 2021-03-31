@@ -1,5 +1,11 @@
 # desktop-i3
 
+> this config will be no longer update since my last stable config has 
+> done on 24 Mar 2021 
+
+
+> to get the config file please watch the video at the below link
+
 
 
 #   I just start using manjaro-i3 on 25-jan-2021
@@ -69,15 +75,22 @@
 ```
 
 > now the gnome-terminal will start-up again 
+> Watch my video from youtube 
+
+
+[![](http://img.youtube.com/vi/3HAnGSsEJVg/0.jpg)](http://www.youtube.com/watch?v=3HAnGSsEJVg "")
 
 
 
-
-
+---
 
 #  !BEFORE YOU COPY AND DO THING DO THIS NOW
 
+### if you don't have your old config then skip this part
 
+
+>   even know that the script will make a backup file but I want you to 
+>   re-check again just to make sure that you have a backup file 
 >   just incase thing happen or you maybe do not like my config 
 >   so that you still have you `.old` config back by just remove .old from the file
 >   then you will be fine 
@@ -101,6 +114,7 @@
 >   you can edit the file as you need)
 
 
+---
 
 
 
@@ -673,6 +687,7 @@ if you want more go ahead  and visit the website.
 -   **Mod+f1** to run brave
 -   **Mod+f2** to run firefox
 -   **Mod+f3** to run chromium
+-   **Mod+f4** to run google chrome "I have install google chrome from AUR"
 -   **Mod+f7** to run ranger
 -   **Mod+b** to run feh ,feh will open the picture in the folder `~/Pictures/Wallpapers` so yeah you must have the folder `Wallpapers` or just change the it
 

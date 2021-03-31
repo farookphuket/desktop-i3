@@ -25,7 +25,7 @@ usermod -a -G www-data $USER
 
 
 #   create the dir for phpmyadmin in /var/lib 
-mkdir /var/lib/phpmyadmin 
+mkdir -p /var/lib/phpmyadmin 
 
 #   change the permission to 777 
 chmod 777 -R /var/lib/phpmyadmin 
@@ -50,9 +50,9 @@ echo "phpmyadmin installed and config "
 
 #   we going to create new web project for the testing
 #   the 2 lines will create new folder and 1 sub folder in lav8.lap  
-mkdir /srv/http/lav8.lap 
-mkdir /srv/http/lav8.lap/public 
-mkdir /srv/http/article.me 
+#mkdir /srv/http/lav8.lap 
+mkdir -p /srv/http/lav8.lap/public 
+mkdir -p /srv/http/article.me 
 
 #   change permission to 777 (read,write,execute)
 chmod 777 -R /srv/http/lav8.lap 
