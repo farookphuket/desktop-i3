@@ -81,6 +81,10 @@ fi
 # change SHELL 
 chsh -s /bin/zsh
 
+# enable pulseaudio 
+systemctl --user enable pulseaudio 
+
+
 echo "--------------- Success   ---------------------------"
 echo "the config file has been copied!"
 echo " please logout then log back in with i3 session "

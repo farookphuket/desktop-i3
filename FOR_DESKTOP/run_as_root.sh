@@ -76,4 +76,8 @@ if [[ -f /etc/locale.gen ]]; then
 fi
 cp ../locale.gen /etc 
 
+# enable pulseaudio 
+systemctl --user enable pulseaudio 
+
+
 

@@ -84,6 +84,9 @@ pacman -Q > ~/Desktop/$USER-computer_after.txt
 chsh -s /bin/zsh
 
 
+systemctl --user enable pulseaudio
+
+
 echo "-----------------------------------------------------"
 echo "the config file has been copied "
 echo "please logout and log back in to i3 session "
