@@ -13,11 +13,13 @@ and you have to replace this file "index.php" with your content
     </p>
     <p>
         if you want another name make sure that you edit the file 
-"/etc/httpd/conf/extra/httpd-vhosts.conf" and "/etchosts" and run 
+"/etc/httpd/conf/extra/httpd-vhosts.conf" and "/etc/hosts" and run 
 "sudo systemctl restart httpd" other wise it's maybe not working!
     </p>
 </div>
+<p>&nbsp;</p>
 <?php
+    echo"<p>&nbsp;</p>";
     phpinfo();
 ?>
 

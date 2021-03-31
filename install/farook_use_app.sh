@@ -5,6 +5,10 @@
  #  with (put the # sign before pacman)
 
 
+
+# copy the locale.gen to the system 
+cp ../locale.gen /etc/
+
 #   need this to complie
 pacman -S  cmake base-devel go nodejs npm --noconfirm
 
@@ -50,6 +54,16 @@ pacman -S audacity audacious  screenkey  --noconfirm
 pacman -S mlocate --noconfirm 
 
 
+# snap by default will not enable so make sure that we have snap enable 
+# before we start to install any of program from the snap store
+# this line has added on 31 Mar 2021
+pacman -S snapd --noconfirm 
+systemctl enable --now snapd.socket
+ln -s /var/lib/snapd/snap /snap
+
+
+
+
 echo "----------------- Pacman Install Has Done-----------------------"
 echo "pacman has done it's operation "
 echo "now will install puddletag from snap"
@@ -69,6 +83,8 @@ updatedb
 
 #   this program cannot find in store(or whatever you call) but 
 #   it's can install throught snap and I have to use it 
+# this program will be take the whole day if you not enable snap from your pamac so i 
+# just comment this by default 
 snap install puddletag-snap 
 
 

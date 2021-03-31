@@ -5,20 +5,25 @@
 
 TODAY=$(date +"%Y-%m-%d_at_%H:%M:%S")
 USER_NAME=$USER
-BACKUP_DIR=$USER_NAME_backup_conf_$TODAY
+
+
 
 # make backup dir
-mkdir ~/Documents/$BACKUP_DIR 
-
-BACKUP_PATH=~/Documents/$BACKUP_DIR 
+mkdir -p ~/Documents/Old_config 
+BACKUP_DIR=~/Documents/Old_config
+BACKUP_PATH=$BACKUP_DIR 
 
 
 
 # if hosts file will make a backup
 if [[ -f /etc/hosts ]]; then
-    cp /etc/hosts $BACKUP_PATH/hosts.old_$TIME
+    cp /etc/hosts $BACKUP_PATH/hosts.old_$TODAY
     mv /etc/hosts /etc/hosts.old
 fi
+cp files_inc/hosts /etc/ 
+
+
+
 cp files_inc/phpmyadmin.conf /etc/httpd/conf/extra/ 
 
 
@@ -42,7 +47,7 @@ if [[ -f /etc/httpd/conf/extra/httpd-vhosts.conf ]]; then
     cp /etc/httpd/conf/extra/ $BACKUP_PATH/httpd-vhosts.conf.old_$TODAY 
     mv /etc/httpd/conf/extra/httpd-vhosts.conf /etc/httpd/conf/extra/httpd-vhosts.conf.old
 fi
-cp files_inc/httpd-vhosts.conf /etc/httpd/conf/extra/ 
+cp files_inc/httpd-vhosts.conf /etc/httpd/conf/extra/
 
 
 
