@@ -2,30 +2,17 @@
 
 # created this file on 31 Jan 2021 via virtualbox using manjaro xfce
 # to run this file without the root permission
-# you can feel free to edit the file farook_use_app.sh just to install only
+# you can feel free to edit them  just to install only
 # the program that you need to use
 
 
+# install with yay before snap because yay take less time than snap
+./yay_install.sh
 
 
 sudo -s ./pacman_install.sh
 
-# before install 
-# cd into $HOME 
-pushd ~/ 
 
-# clone yay package to $HOME this will make the dir yay-git
-git clone https://aur.archlinux.org/yay-git.git 
-
-# cd into yay-git 
-pushd ~/yay-git 
-
-# run command to execute 
-makepkg -si --noconfirm
-
-
-# install with yay before snap because yay take
-sudo -s ./yay_install.sh
 
 
 echo "-----------------------------------------------------------"
