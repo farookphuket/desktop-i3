@@ -8,4 +8,6 @@
 
 
 
-sudo -s ./farook_use_app.sh
+sudo -s ./pacman_install.sh
+
+./yay_install.sh
