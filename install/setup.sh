@@ -10,4 +10,4 @@
 
 sudo -s ./pacman_install.sh
 
-./yay_install.sh
+sudo -s ./yay_install.sh

@@ -65,8 +65,12 @@ ln -s /var/lib/snapd/snap /snap
 
 
 echo "----------------- Pacman Install Has Done-----------------------"
-echo "pacman has done it's operation "
-echo "now will install puddletag from snap"
+echo " pacman has done it's operation "
+echo " auto install for PuddleTag has remove 1 Apr 2021 "
+echo " PuddleTag has no longer auto install as it take too much time"
+echo " and the prcess has never been complete if you want to install "
+echo " PuddleTag please run this command"
+echo " sudo snap install puddletag-snap"
 echo "----------------------------------------------------------------"
 
 
@@ -85,11 +89,8 @@ updatedb
 #   it's can install throught snap and I have to use it 
 # this program will be take the whole day if you not enable snap from your pamac so i 
 # just comment this by default 
-snap install puddletag-snap 
+# snap install puddletag-snap 
 
 
-sleep 5s
-echo "------------- All done -------"
-echo "------------- setup will be exit now ----------------------"
 
 
