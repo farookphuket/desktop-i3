@@ -10,9 +10,22 @@
 
 sudo -s ./pacman_install.sh
 
+# before install 
+# cd into $HOME 
+pushd ~/ 
+
+# clone yay package to $HOME this will make the dir yay-git
+git clone https://aur.archlinux.org/yay-git.git 
+
+# cd into yay-git 
+pushd ~/yay-git 
+
+# run command to execute 
+makepkg -si --noconfirm
+
 
 # install with yay before snap because yay take
-./yay_install.sh
+sudo -s ./yay_install.sh
 
 
 echo "-----------------------------------------------------------"
