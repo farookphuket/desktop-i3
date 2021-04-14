@@ -27,7 +27,7 @@ font xft:Source Code Variable 14
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec konsole
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -36,7 +36,8 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font 'Noto Sans 18'
 
 # launch categorized menu
-bindsym $mod+z exec --no-startup-id morc_menu
+# to use morc_menu un-coment
+#bindsym $mod+z exec --no-startup-id morc_menu
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -75,7 +76,7 @@ bindsym $mod+F1 exec brave
 bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec chromium
 bindsym $mod+F4 exec google-chrome-stable
-bindsym $mod+F7 exec gnome-terminal -name float  -e 'ranger'
+bindsym $mod+F7 exec konsole -name float  -e 'ranger'
 
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
@@ -301,20 +302,17 @@ bindsym $mod+9 exec --no-startup-id blurlock
 #exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 #exec --no-startup-id manjaro-hello
+# start network manager and the nm-applet
 exec --no-startup-id nm-applet
+exec --no-startup-id nm-applet --indicator
+
+
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
-
-
-#exec --no-startup-id clipit
+exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-
-
-
-
-# un-comment if you want Conky  
-# exec --no-startup-id start_conky_maia
+exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 
 
@@ -469,12 +467,12 @@ exec_always setxkbmap -model pc105 -layout "us,th" -option 'grp:alt_shift_toggle
 
 #   this is only my desktop config find your output by xrandr --query
 exec --no-startup-id xrandr --output HDMI2 --left-of HDMI1 --auto
-exec --no-startup-id lxsession 
+exec --no-startup-id lxsession &
 
 
 
 
-# start feh on reboot wallpaper will be random 
+# start feh on reboot
 exec --no-startup-id feh --randomize --bg-scale ~/Pictures/Wallpapers/*
 
 # call feh with the window size of 1280x720

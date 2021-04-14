@@ -3,7 +3,7 @@
 
 konsole -e cmus &
 
-sleep 12s
+sleep 5s
 
 
 cmus-remote -C clear

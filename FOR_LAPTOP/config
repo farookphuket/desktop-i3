@@ -281,11 +281,14 @@ gaps inner 4
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
+# start network manager and the nm-applet
 exec --no-startup-id nm-applet
 
+# edit on 14 Apr 2021 
+exec --no-startup-id nm-applet --indicator
 
 #exec --no-startup-id klipper
-exec --no-startup-id clipit
+#exec --no-startup-id clipit
 
 
 exec --no-startup-id pamac-tray

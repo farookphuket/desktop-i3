@@ -13,7 +13,7 @@ git clone https://aur.archlinux.org/yay-git.git
 pushd ~/yay-git 
 
 # run command to execute 
-makepkg -si --noconfirm
+makepkg -si --noconfirm 
 
 
 
