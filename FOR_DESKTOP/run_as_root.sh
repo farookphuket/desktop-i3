@@ -29,7 +29,7 @@ pacman -S zsh zsh-autosuggestions zsh-completions manjaro-zsh-config zsh-history
 pacman -S polkit-gnome libgnomekbd gnome-themes-extra gnome-online-accounts gnome-icon-theme-symbolic gnome-icon-theme gnome-desktop gnome-autoar --noconfirm
 
 # install networkmanager dmenu git from aur
-pamac -S networkmanager-dmenu-git 
+pamac install networkmanager-dmenu
 
 
 sleep 5s
