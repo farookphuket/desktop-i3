@@ -31,6 +31,11 @@ pacman -S zsh zsh-autosuggestions zsh-completions manjaro-zsh-config zsh-history
 pacman -S polkit-gnome libgnomekbd gnome-themes-extra gnome-online-accounts gnome-icon-theme-symbolic gnome-icon-theme gnome-desktop gnome-autoar --noconfirm 
 
 
+
+
+# install networkmanager dmenu git from aur
+pamac -S networkmanager-dmenu-git 
+
 sleep 5s 
 if [[ -f /etc/i3status.conf ]]; then
 	mv /etc/i3status.conf /etc/i3status.conf.old 
