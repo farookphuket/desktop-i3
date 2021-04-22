@@ -4,6 +4,9 @@ apt install feh fonts-font-awesome rofi pulseaudio-utils xbacklight alsa-tools  
 # keyboard indicator wallpaper 
 apt install xxkb nitrogen pavucontrol blueman cmus -yy
 
+apt install lxsession lxappearance -yy
+
+
 
 apt install clipit gcc git terminator locate pcmanfm acpi libnotify-bin -yy
 

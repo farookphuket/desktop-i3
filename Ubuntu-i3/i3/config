@@ -39,7 +39,8 @@ exec --no-startup-id blueman-tray
 exec --no-startup-id volumeicon
 
 
-
+#  polkit  
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
 
 # =================  Key binding =================
@@ -52,6 +53,8 @@ bindsym $mod+m exec ~/.config/cmus/update-cmus-library.sh
 bindsym $mod+Ctrl+m exec pavucontrol
 
 
+# screen capture 
+bindsym Print exec flameshot gui
 
 # kill window 
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
