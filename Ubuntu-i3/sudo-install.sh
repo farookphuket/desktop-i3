@@ -4,7 +4,7 @@ apt install feh fonts-font-awesome rofi pulseaudio-utils xbacklight alsa-tools  
 # keyboard indicator wallpaper 
 apt install xxkb nitrogen pavucontrol blueman cmus -yy
 
-apt install lxsession lxappearance -yy
+apt install lxsession lxappearance zsh -yy
 
 
 
@@ -22,4 +22,11 @@ snap install pa-applet brave
 apt install flameshot -yy
 
 apt install mlocate -yy && updatedb
+
+
+
+# zsh theme
+cp -r ../zsh/zsh /usr/share/ 
+
+cp -r ../zsh/zsh-theme-powerlevel10k /usr/share 
 

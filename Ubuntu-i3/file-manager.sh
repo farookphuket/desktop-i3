@@ -20,3 +20,6 @@ popd
 
 # copy the config for xxkeyboard 
 cp i3/.xxkbrc ~/ 
+
+# copy the .zsh file 
+cp ../zsh/.zshrc ~/ 

@@ -29,6 +29,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 
+
+# ============================= my Custom start =====================
+
 # wifi 
 exec --no-startup-id nm-applet
 
@@ -43,6 +46,7 @@ exec --no-startup-id volumeicon
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
 
+
 # =================  Key binding =================
 
 # my belove music player cmus
@@ -53,8 +57,11 @@ bindsym $mod+m exec ~/.config/cmus/update-cmus-library.sh
 bindsym $mod+Ctrl+m exec pavucontrol
 
 
+
 # screen capture 
 bindsym Print exec flameshot gui
+
+
 
 # kill window 
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
@@ -96,6 +103,23 @@ exec_always setxkbmap -model pc105 -layout "us,th" -option 'grp:alt_shift_toggle
 
 # to change input press alt+shift
 
+
+
+# Configure border style <normal|1pixel|pixel xx|none|pixel>
+default_border pixel 1
+default_floating_border normal
+
+# Hide borders
+hide_edge_borders none
+
+# change borders
+bindsym $mod+u border none
+bindsym $mod+y border pixel 1
+bindsym $mod+n border normal
+
+
+
+# =================================== End of my custom ================
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
