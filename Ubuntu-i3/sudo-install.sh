@@ -17,7 +17,7 @@ apt install clipit gcc git terminator locate pcmanfm acpi libnotify-bin -yy
 # apt install shutter -yy
 
 # install by snap 
-snap install pa-applet brave
+snap install pa-applet brave sqlitebrowser dbeaver-ce 
 
 apt install flameshot -yy
 
@@ -30,3 +30,6 @@ cp -r ../zsh/zsh /usr/share/
 
 cp -r ../zsh/zsh-theme-powerlevel10k /usr/share 
 
+
+# copy the icons 
+./file_manager_root.sh 
