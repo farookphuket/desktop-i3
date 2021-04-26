@@ -17,6 +17,8 @@ cp i3/update-cmus-library.sh ~/.config/cmus
 
 cp i3/config ~/.config/i3/ 
 
+cp -r i3/command ~/.config/i3/
+
 
 
 chsh -s /bin/zsh 
