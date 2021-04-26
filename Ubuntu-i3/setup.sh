@@ -6,6 +6,14 @@ echo "================= Install and setup I3Wm by farook =============="
 
 ./file-manager.sh
 
+
+
+# install dbeaver
+./install_dbeaver.sh
+
+
+
+# install the require program 
 sudo ./sudo-install.sh 
 
 #gnome-terminal -- cmus

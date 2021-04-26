@@ -3,6 +3,9 @@
 
 
 
+
+
+
 apt install feh fonts-font-awesome rofi pulseaudio-utils xbacklight -yy 
 
 apt install alsa-tools  -yy
@@ -21,8 +24,13 @@ apt install clipit gcc git terminator locate pcmanfm acpi libnotify-bin -yy
 # I'm not using shutter now I use flameshot
 add-apt-repository -y -u ppa:linuxuprising/shutter
 
-
+# install shutter 
 apt install shutter -yy
+
+
+# install dbeaver
+
+
 
 # install by snap 
 snap install pa-applet 
