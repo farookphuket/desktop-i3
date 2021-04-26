@@ -8,15 +8,31 @@ echo "================= Install and setup I3Wm by farook =============="
 
 sudo ./sudo-install.sh 
 
-gnome-terminal -- cmus
+#gnome-terminal -- cmus
 
 sleep 5s 
 
 cp i3/update-cmus-library.sh ~/.config/cmus
 
 
-sudo chsh -s /bin/zsh 
+cp i3/config ~/.config/i3/ 
 
 
 
-echo "================= Done First ===================="
+chsh -s /bin/zsh 
+
+
+
+echo "================= your process has Done ! $USER  ============"
+echo " please logout and log back in using i3 session "
+echo " if you don't know how please watch my video "
+echo "============================================================="
+
+
+sleep 5s 
+
+
+
+
+firefox -- "https://www.youtube.com/watch?v=q3Sanjl93dQ&list=PLWv3Eu4jXcQiwpZTKMZaFXB5L3dogTuCT&index=2"
+#reboot

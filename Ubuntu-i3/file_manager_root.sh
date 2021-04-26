@@ -11,3 +11,5 @@ cp -r ../Icons/Lyra-red-dark/ /usr/share/icons/
 cp -r ../Icons/Infinity-Dark-Icons/ /usr/share/icons/ 
 
 cp -r ../Icons/Cyan-Breeze-Dark-Icons /usr/share/icons 
+
+cp i3/i3status.conf /etc/

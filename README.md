@@ -1,7 +1,7 @@
 # desktop-i3
 
-> this config will be no longer update since my last stable config has 
-> done on 24 Mar 2021 
+> this config will be no longer update since my last stable config has
+> done on 24 Mar 2021
 
 
 > to get the config file please watch the video at the below link
@@ -10,8 +10,8 @@
 
 #   I just start using manjaro-i3 on 25-jan-2021
 
->   dear friends I am just very tired of config my custom i3wm on manjaro xfce 
->   so I just move to manjaro-i3 and will stick with this until I know 
+>   dear friends I am just very tired of config my custom i3wm on manjaro xfce
+>   so I just move to manjaro-i3 and will stick with this until I know
 >   how to use&config dwm (up until now I still cannot use dwm)
 
 
@@ -21,18 +21,20 @@
 
 
 # Warning !
-> this config has test on Manjaro-kde,Manjaro-xfce only so if you use 
+
+
+> this config has test on Manjaro-kde,Manjaro-xfce only so if you use
 > Manjaro-gnome this may not work for you
 
 
 
 
-#   MANJARO KDE,GNOME,XFCE 
+#   MANJARO KDE,GNOME,XFCE
 
 > after you have clone this repo it will be a folder call "desktop-i3"
-> cd into the folder then you will see the "FOR_DESKTOP" and "FOR_LAPTOP" 
-> cd into one of them now run `./setup.sh` wait until the configuration 
-> complete then logout and log back in 
+> cd into the folder then you will see the "FOR_DESKTOP" and "FOR_LAPTOP"
+> cd into one of them now run `./setup.sh` wait until the configuration
+> complete then logout and log back in
 > now you're all set enjoy!
 
 
@@ -60,25 +62,46 @@
 
 #   Manjaro GNOME `gnome-Terminal` not start after upgrade
 
-> Date 28-Feb-2021 05:05 a.m. 
-> copy from 
+> Date 28-Feb-2021 05:05 a.m.
+> copy from
 > https://forum.manjaro.org/t/gnome-terminal-wont-open-after-update/52808/2
-> I've got some problem with this config on manjaro-gnome editions I don't 
+> I've got some problem with this config on manjaro-gnome editions I don't
 > know if any one had this issue this is how I got fixed
 
-``` 
- sudo vi /etc/locale.gen 
+```
+ sudo vi /etc/locale.gen
  "then remove # from en_US.UTF-8 UTF-8"
  "save file and exit "
- sudo locale-gen 
- 
+ sudo locale-gen
+
 ```
 
-> now the gnome-terminal will start-up again 
-> Watch my video from youtube 
+> now the gnome-terminal will start-up again
+> Watch my video from youtube
 
 
 [![](http://img.youtube.com/vi/3HAnGSsEJVg/0.jpg)](http://www.youtube.com/watch?v=3HAnGSsEJVg "")
+
+
+
+
+
+---
+
+
+
+# Ubuntu 20.04,21.04
+
+> test on 26 Apr 2021 Ubuntu you will have to cd into
+> Ubuntu folder then run ./setup.sh and the script will do
+> thing for you please make sure that you have read the script
+> before you start to use it.
+
+
+
+
+
+
 
 
 
@@ -89,28 +112,28 @@
 ### if you don't have your old config then skip this part
 
 
->   even know that the script will make a backup file but I want you to 
->   re-check again just to make sure that you have a backup file 
->   just incase thing happen or you maybe do not like my config 
+>   even know that the script will make a backup file but I want you to
+>   re-check again just to make sure that you have a backup file
+>   just incase thing happen or you maybe do not like my config
 >   so that you still have you `.old` config back by just remove .old from the file
->   then you will be fine 
->   open your terminal type(OR COPY AND PASTE) 
->   `sudo cp /etc/i3status.conf /etc/i3status.conf.old`   
+>   then you will be fine
+>   open your terminal type(OR COPY AND PASTE)
+>   `sudo cp /etc/i3status.conf /etc/i3status.conf.old`
 
 >   STILL in terminal type (OR COPY AND PASTE)
->   `cp ~/.i3/config ~/.i3/config.old` 
-   
+>   `cp ~/.i3/config ~/.i3/config.old`
 
 
->   after clone this repo make sue that you run 
->   `cd desktop-i3/manjaro-i3 ` 
+
+>   after clone this repo make sue that you run
+>   `cd desktop-i3/manjaro-i3 `
 >   otherwise you cannot run the below command
 
 >   if you just do clean install make your you have run "sudo pacman -Syu "
->   after you update the system now you can install all the program at one 
->   command (make sure you're in the "install"  directory of desktop-i3 that 
->   you just have copy ) by run "sudo ./install_my_app.sh" so all of the 
->   program will be install (please make sure you have a look the file 
+>   after you update the system now you can install all the program at one
+>   command (make sure you're in the "install"  directory of desktop-i3 that
+>   you just have copy ) by run "sudo ./install_my_app.sh" so all of the
+>   program will be install (please make sure you have a look the file
 >   you can edit the file as you need)
 
 
@@ -118,15 +141,15 @@
 
 
 
-##  program that I must to have 
+##  program that I must to have
 
-> when I come to install setup i3wm on manjaro the program that list below 
+> when I come to install setup i3wm on manjaro the program that list below
 > are all that I must install on my system(both Desktop and Laptop)
 
 - rofi base-devel bmenu morc_menu cmake go w3m lxsession lxappearance
-xxkb 
+xxkb
 - networkmanager network-manager-applet pa-applet pulseaudio pavucontrol
-- i3-gaps i3status-manjaro i3lock i3exit blueman polkit-gnome xdotool 
+- i3-gaps i3status-manjaro i3lock i3exit blueman polkit-gnome xdotool
 - xfce4-terminal xfce4-power-manager feh picom conky flameshot arandr clipit
 
 
@@ -145,10 +168,10 @@ xxkb
 
 
 
-##  Date 4 Feb 2021 
+##  Date 4 Feb 2021
 
 >   I just install the "lxsession" program now all the icon that I want it to be
->   shown is now show on the right panel of the screen 
+>   shown is now show on the right panel of the screen
 
 
 
@@ -211,10 +234,10 @@ No.     |    OS   |file name       | date
 <br />
 
 
-##  3 Feb 2021 Manjaro ONLY! 
->   the file "install_my_app.sh" is the program that I mainly use and install 
->   every time so if your clean install and you want to install it too 
->   now make sure that you are in the directory "desktop-i3" that you just 
+##  3 Feb 2021 Manjaro ONLY!
+>   the file "install_my_app.sh" is the program that I mainly use and install
+>   every time so if your clean install and you want to install it too
+>   now make sure that you are in the directory "desktop-i3" that you just
 >   clone if you do so you can just simply run "sudo ./" in your terminal
 >   so all the program will be install as you expect.
 
@@ -225,9 +248,9 @@ No.     |    OS   |file name       | date
 
 
 
-##  31 Jan 2021 
+##  31 Jan 2021
 
-> there is not easy for me to find a good font for myself but "twlg" is the best 
+> there is not easy for me to find a good font for myself but "twlg" is the best
 > font for me so I download it from `https://aur.archlinux.org/packages/fonts-tlwg/`
 > today (31 Jan 2021) now I am a happy boy
 
@@ -239,13 +262,13 @@ No.     |    OS   |file name       | date
 
 <br />
 
-##  30 Jan 2021 
+##  30 Jan 2021
 
->   install manjaro kde on my laptop as it is "no sound" when I install 
+>   install manjaro kde on my laptop as it is "no sound" when I install
 >   manjaro-i3 on my asus laptop so just finish up today I spend the whole day
 >   just to learn how can I set i3wm to be in the way that I want on my laptop
 >   the config file will be in `laptop-i3/` only 3 file `config`,`i3status.conf`
->   and `update-cmus-library.sh` 
+>   and `update-cmus-library.sh`
 >   so I learn more about i3wm now
 >   I HAVE A GOOD DAY!
 
@@ -258,7 +281,7 @@ No.     |    OS   |file name       | date
 
 <br />
 
-# 28 Jan 2021 where is the conky config file 
+# 28 Jan 2021 where is the conky config file
 
 > the conky config file for manjaro i3(the one I use) is live in the path
 > `/usr/share/conky/conky_maia` what I have edit is just change the font-size
@@ -292,7 +315,7 @@ No.     |    OS   |file name       | date
 
 
 >   I just got the solution from `https://forum.manjaro.org/t/compton-in-manjaro-i3-not-working-solved/32105/5`
->   now my background transparent is working what I did was copy the picom config file to .config 
+>   now my background transparent is working what I did was copy the picom config file to .config
 >   I ran `cp /etc/xdg/picom.conf ~/.config` at the line `opacity-rule = ["85:class_g= 'xfce-terminal'"];`
 >   in my `~/.config/i3/config` I put `exec_always --no-startup-id picom --experimental-backends` the press `$Mod+r`
 >   that's is now I can set the opacity of my console Wola!!
@@ -415,11 +438,11 @@ No.     |    OS   |file name       | date
 
 
 
-#   What I've done OR What i have learn 
+#   What I've done OR What i have learn
 
 
 >   I just have to re-install manjaro on 5-Jan-2021 because I cannot boot my system after update
->   the system so I have to re-install   
+>   the system so I have to re-install
 
 
 <br />
@@ -438,15 +461,15 @@ No.     |    OS   |file name       | date
 
 
 
---- 
+---
 
 #   27 Jan 2021 Hello xxkb keyboard layout
 
 
->   keyboard indicator never show up for me since I start using i3wm 
->   now is here what I did was I install the program call xxkb 
->   by run the command `sudo pacman -S xxkb` 
->   then I create the config file in home directory `touch ~/.xxkbrc` 
+>   keyboard indicator never show up for me since I start using i3wm
+>   now is here what I did was I install the program call xxkb
+>   by run the command `sudo pacman -S xxkb`
+>   then I create the config file in home directory `touch ~/.xxkbrc`
 >   to put the following code in the file  type `vim ~/.xxkbrc`
 >   then copy the code below paste into file .xxkbrc
 >   by now I don't have the ".xmp" file for the flag of the language label
@@ -454,13 +477,13 @@ No.     |    OS   |file name       | date
 
 
 ```
-  
+
   XXkb.image.path: /home/farook/.config/xxkb
-  
+
   XXkb.group.base: 1
   XXkb.group.alt: 2
-  
-  
+
+
   XXkb.mainwindow.type: tray
   XXkb.mainwindow.enable: yes
   XXkb.mainwindow.appicon: yes
@@ -476,9 +499,9 @@ No.     |    OS   |file name       | date
   XXkb.mainwindow.image.3:
   XXkb.mainwindow.image.4:
   XXkb.mainwindow._delete: no
-  
+
   XXkb.button.enable: no
-  
+
   XXkb.controls.focusout: no
   XXkb.controls.two_state: no
   XXkb.controls.add_when_start: yes
@@ -493,9 +516,9 @@ No.     |    OS   |file name       | date
 
 
 
-##  Add code to your i3 config file 
+##  Add code to your i3 config file
 
->   open your terminal run `vim ~/.i3/config` 
+>   open your terminal run `vim ~/.i3/config`
 >   in "manjaro-i3" will be in this path it's your i3 config file
 
 
@@ -510,9 +533,9 @@ exec_always --no-startup-id xxkb
 
 
 
-##  make sure that you have a locale like this 
+##  make sure that you have a locale like this
 
->   in manjaro setting 
+>   in manjaro setting
 
 [locale_setting]:https://i.ibb.co/Wyz585K/2021-01-27-locale-setting.png
 
@@ -539,7 +562,7 @@ exec_always --no-startup-id xxkb
 
 # my best rhythmbox replacement is Cmus 26 Jan 2021
 
-> I have a very hard time tried to find the good enough music player 
+> I have a very hard time tried to find the good enough music player
 > for rhythmbox my belove music player of all time is now "cmus"
 
 
@@ -562,8 +585,8 @@ exec_always --no-startup-id xxkb
 
 1. just install fish and the first thing I try to do is to get rid of the welcome message what I did was easy enough by 3 step
 
-STEP ONE "CREATE AN EMPTY FILE": create an empty file by run command (copy and paste to your terminal) ` touch ~/.config/fish/functions/fish_greeting.fish ` 
-(if you don't have the folder functions just create by run `mkdir ~/.config/fish/functions` then now you can create the file 
+STEP ONE "CREATE AN EMPTY FILE": create an empty file by run command (copy and paste to your terminal) ` touch ~/.config/fish/functions/fish_greeting.fish `
+(if you don't have the folder functions just create by run `mkdir ~/.config/fish/functions` then now you can create the file
 `touch ~/.config/fish/functions/fish_greeting.fish`)
 
 <br />
@@ -577,7 +600,7 @@ end
 
 ```
 
-hit enter then copy and paste 
+hit enter then copy and paste
 
 ```
 funcsave fish_greeting
@@ -587,27 +610,27 @@ funcsave fish_greeting
 
 <br />
 
-STEP THREE : run the command in your terminal(COPY AND PASTE) 
+STEP THREE : run the command in your terminal(COPY AND PASTE)
 
 ```
 
-set --universal fish_greeting 
+set --universal fish_greeting
 
-``` 
-
-
-
-hit enter then logout now when you log back and open terminal you're no longer see "fish welcome screen" 
+```
 
 
 
+hit enter then logout now when you log back and open terminal you're no longer see "fish welcome screen"
 
 
---- 
 
--   Date 6 Jan 2021 
-1.  picom not working I just remove the compton.conf by using command 
-"rm -rf ~/.config/compton.conf" so now I can have a transparent background 
+
+
+---
+
+-   Date 6 Jan 2021
+1.  picom not working I just remove the compton.conf by using command
+"rm -rf ~/.config/compton.conf" so now I can have a transparent background
 
 
 
@@ -634,7 +657,7 @@ if you want more go ahead  and visit the website.
 
 -   date 6 Dec 2020
 
-1.  today my terminal background is comming back to transparent again 
+1.  today my terminal background is comming back to transparent again
 
 
 
@@ -692,13 +715,13 @@ if you want more go ahead  and visit the website.
 -   **Mod+b** to run feh ,feh will open the picture in the folder `~/Pictures/Wallpapers` so yeah you must have the folder `Wallpapers` or just change the it
 
 -   **Mod+F2** to run firefox
--   **Mod+m** run cmus "please note if you want cmus to be auto update 
+-   **Mod+m** run cmus "please note if you want cmus to be auto update
 music library on start please have a look /.config/cmus/update-cmus-library.sh"
 file and edit it the music to yours.
 
 
--   **PrintScreen** to run flameshot now click and drag to select area for the 
-snap shot your screen 
+-   **PrintScreen** to run flameshot now click and drag to select area for the
+snap shot your screen
 
 
 
@@ -717,8 +740,8 @@ snap shot your screen
 <br />
 
 
--   **Mod+w**   to run `rofi-wifi-menu` to select 'wifi network'(in the year 
-2021 I have remove this so no longer rofi-wifi-menu) because you can click 
+-   **Mod+w**   to run `rofi-wifi-menu` to select 'wifi network'(in the year
+2021 I have remove this so no longer rofi-wifi-menu) because you can click
 and select wifi network via the pa-manager-applet
 
 
@@ -782,15 +805,15 @@ so let not use it
 
 ##  Log screen
 
--   **Mod+9** will be blur lock need to enter the password(your password) 
+-   **Mod+9** will be blur lock need to enter the password(your password)
 to login
 
 
 
-##  lockout 
+##  lockout
 
--   **Mod+0** follow by e will be logout 
--   **Mod+0** follow by r will be reboot 
--   **Mod+0** follow by s will be shutdown 
--   **Mod+0** follow by l will be blurlock 
+-   **Mod+0** follow by e will be logout
+-   **Mod+0** follow by r will be reboot
+-   **Mod+0** follow by s will be shutdown
+-   **Mod+0** follow by l will be blurlock
 

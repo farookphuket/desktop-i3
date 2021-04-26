@@ -1,6 +1,7 @@
 #!/bin/bash 
 
 
+echo "========= this will download wall paper please be patiently ========="
 
 # check if the Wallpapers dir is exited
 if [[ -d ~/Pictures/Wallpapers ]] && [[ -n `ls -A ~/Pictures/Wallpapers `  ]]; then
