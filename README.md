@@ -1,38 +1,44 @@
 # desktop-i3
 
+<div style="color:red">
+ <h2 style="color:blue;text-align:center">There is no longer update for this code</h2>
+ 
 > this config will be no longer update since my last stable config has
-> done on 24 Mar 2021
+> done on 24 Mar 2021 
+</div>
 
+
+
+
+[manjaro_my_config]:https://i.ibb.co/RjsV2R9/2021-06-29-manjaro-my-config.png
 
 > to get the config file please watch the video at the below link
 
+> to get the update version of this copy please visit [manjaro my config](https://github.com/farookphuket/manjaro_my_config) 
 
-
-#   I just start using manjaro-i3 on 25-jan-2021
-
->   dear friends I am just very tired of config my custom i3wm on manjaro xfce
->   so I just move to manjaro-i3 and will stick with this until I know
->   how to use&config dwm (up until now I still cannot use dwm)
+> if you use Ubuntu,Debian visit [here](https://github.com/farookphuket/ubuntu_my_config)
 
 
 
-
-<br />
-
-
-# Warning !
+![my update config][manjaro_my_config]
 
 
-> this config has test on Manjaro-kde,Manjaro-xfce only so if you use
-> Manjaro-gnome this may not work for you
+
+
+
+
+
+
 
 
 
 
 #   MANJARO KDE,GNOME,XFCE
 
-> after you have clone this repo it will be a folder call "desktop-i3"
-> cd into the folder then you will see the "FOR_DESKTOP" and "FOR_LAPTOP"
+> after you have clone this repo(by run the command `git clone https://github.com/farookphuket/desktop-i3.git`) it will create a folder call "desktop-i3" 
+> in your home folder(unless you path working directory is not $HOME so it will clone this code into somewhere else)
+
+> now you cd into the folder then you will see the folder "FOR_DESKTOP" and "FOR_LAPTOP"
 > cd into one of them now run `./setup.sh` wait until the configuration
 > complete then logout and log back in
 > now you're all set enjoy!
@@ -63,7 +69,7 @@
 #   Manjaro GNOME `gnome-Terminal` not start after upgrade
 
 > Date 28-Feb-2021 05:05 a.m.
-> copy from
+> copy from [forum.manjaro.org](https://forum.manjaro.org/t/gnome-terminal-wont-open-after-update/52808/2)
 > https://forum.manjaro.org/t/gnome-terminal-wont-open-after-update/52808/2
 > I've got some problem with this config on manjaro-gnome editions I don't
 > know if any one had this issue this is how I got fixed
